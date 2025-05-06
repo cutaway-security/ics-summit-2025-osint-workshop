@@ -10,16 +10,16 @@ Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event whe
 
 ### Agenda
 
-* Task 1: Outline Workshop's OSINT Process
+* [Task 1](task1.md): Outline of the Workshop's OSINT Process
 * [Task 2](task2.md): ICS / OT Passive Geolocation Reconnaissance By Sector
-* Task 3: Identify Student Targets
+* [Task 3](task3.md): Student Targets Identification
   * List of Industrial Sectors
   * ChatGPT and Gemeni Query
-* Task 4: Start Spiderfoot Information Gathering
+* [Task 4](task4.md): Start Spiderfoot Information Gathering
   * What is Spiderfoot
   * Starting Passive Spiderfoot Scan using Kali
   * Review of results (after long run)
-* Task 5: Domain Name Service Exploration
+* [Task 5](./task5.md): Domain Name Service Exploration
   * Common Remote Access Subdomains:
     * citrix, rdp, nvc, vpn, remote, gateway, access, support, bastion, jump, portal, ctx, netscalar, receiver, zcalar, rdgateway, rdweb, tsgateway, pulse, secure, sslvpn, asa, bomgar, access, fortigate
   * AI Query for Lab servers by sector
@@ -27,9 +27,9 @@ Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event whe
   * DNSDumpster: https://dnsdumpster.com/
   * Subdomain Finder: https://subdomainfinder.c99.nl/
   * VirusTotal: https://www.virustotal.com/gui/home/search
-* Task 6: Identify External Remote Access
+* [Task 6](task6.md): Identify External Remote Access
   * Using Shodan.io
-* Task 7: Document Exposure Analysis
+* [Task 7](task7.md): Document Exposure Analysis
   * Search "site:<site>.com "approved subcontractors""
   * Search ""site:<site>.com radio"
   * Search "site:<site>.com cybersecurity"
@@ -37,16 +37,20 @@ Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event whe
   	* Emerson - DeltaV
   	* ABB - 800xA
   	* Rockwell - PlantPAx
-
-
-* Task 7: Personnel Analysis
+* [Task 8](task8.md): Personnel Analysis
   * Board of Directors
   * Linked In
-* Task 8: Email Analysis
-* Task 9: Swagger API Analysis
+* [Task 9](task9.md): Email Analysis
+* [Task 10](task10.md): Swagger API Analysis
 
 ## Experienced OSINT Analysts
 
-Some of this might be basic for you. Stick with the class or move on at your own pace. Help your neighbors. Remember the leadership axiom "Train Your Own Replacement." We, your team, are stonger working together. 
+Some of this might be basic for you. Stick with the class or move on at your own pace. Help your neighbors. Remember the leadership axiom "Train Your Own Replacement." We, your team, are stronger working together. 
 
+## Contributors
 
+Be sure to checkout, and thank, the [Contributors](contributors.md) to this workshop.
+
+## Tools
+
+We use very few tools for this workshop. You can track them on the [Tools](tools.md) page.

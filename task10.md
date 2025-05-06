@@ -3,4 +3,4 @@ layout: default
 ---
 
 # OSINT Workshop
-## Task 3: Student Targets Identification
+## Task 10: Swagger API Analysis
