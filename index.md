@@ -11,3 +11,8 @@ Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event whe
 #### Experienced OSINT Analysts
 
 Some of this might be basic for you. Stick with the class or move on at your own pace. Help your neighbors. Remember the leadership axiom "Train Your Own Replacement." We, your team, are stonger working together. 
+
+#### For more indepth OSINT Training
+
+* [SEC497: Practical Open-Source Intelligence (OSINT)™](https://www.sans.org/cyber-security-courses/practical-open-source-intelligence/){:target="_blank"}
+* [SEC587: Advanced Open-Source Intelligence (OSINT) Gathering and Analysis™](https://www.sans.org/cyber-security-courses/advanced-open-source-intelligence-gathering-analysis/){:target="_blank"}
