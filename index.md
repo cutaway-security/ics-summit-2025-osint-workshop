@@ -8,13 +8,11 @@ layout: default
 
 Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event where we will walk through some basic concepts and techniques for conducting [Open Source Intelligence (OSINT)](https://www.sans.org/osint/){:target="_blank"} analysis of targets. We are going to do this analysis without loading commercial tools or tools that require accounts or API keys. But, don't let that stop you. Follow the process using your commercial, authenticated, and custom tools to do this workshop.
 
-### Agenda
+### Agenda and Table of Contents
 
 * [Task 1](task1.md): Outline of the Workshop's OSINT Process
 * [Task 2](task2.md): ICS / OT Passive Geolocation Reconnaissance By Sector
 * [Task 3](task3.md): Student Targets Identification
-  * List of Industrial Sectors
-  * ChatGPT and Gemeni Query
 * [Task 4](task4.md): Start Spiderfoot Information Gathering
   * What is Spiderfoot
   * Starting Passive Spiderfoot Scan using Kali
