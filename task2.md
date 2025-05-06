@@ -3,6 +3,7 @@ layout: default
 ---
 
 # OSINT Workshop
+[Agenda](./index.md)
 ## Task 2: ICS / OT Passive Geolocation Reconnaissance By Sector
 
 Industrial control environments have large footprints. These facilities can be large. Google Maps provides satellite views of public areas. These views provide information about ingress and egress from industrial sites. Understanding the address of a site allows the area to be searched using a top-down view. It also may provide a street view of the location which can show parking areas, guard shacks, cameras, and other details about the site. While this information can be dated it is often current enough make basic assumptions about physical security.
