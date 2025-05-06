@@ -18,8 +18,8 @@ Students can also query an AI tool, such as [ChatGPT](https://chatgpt.com/){:tar
 
 Run the following query and use the randomly identified target as the focus of your workshop's OSINT activities. If the information gathering is producing limited results then run the command again. Most targets will work and produce interestingly unique results.
 
-The `Be succinct` statement in this query helps to prevent overly verbose responses from the AI.
+The `Be succinct` statement in this query helps to prevent overly verbose responses from the AI. Remove that part if you want a bit more detail about the selection from the AI tool.
 
-```
+```AsciiDoc
 For the industrial industries in the following list, pick one of the industries randomly and then find a company that provides products or services in that industry. Provide the name of the company and the primary website for that company. Be succinct. ["Aerospace and defense","Automotive","Electrical electronics and semiconductors","Machinery","Fabricated metals","Furniture and wood products","Plastics and rubber","Medical products ","Electric Generation","Electric Transmission","Electric Distribution","Gas/Oil Exploration and production","Gas/Oil Pipeline","Gas/Oil Refining","Cement and glass","Chemical and petrochemical","Food and beverage","Metals (production)","Pharmaceuticals","Pulp and paper","Textiles","Waste and water","Retail","Wholesale","Logistics","Rail / Train","Maritime","Ports","Airports"]
 ```
