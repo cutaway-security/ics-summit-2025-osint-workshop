@@ -6,7 +6,7 @@ layout: default
 [Agenda](./index.md)
 ## Task 2: ICS / OT Passive Geolocation Reconnaissance By Sector
 
-Industrial control environments have large footprints. These facilities can be large. Google Maps provides satellite views of public areas. These views provide information about ingress and egress from industrial sites. Understanding the address of a site allows the area to be searched using a top-down view. It also may provide a street view of the location which can show parking areas, guard shacks, cameras, and other details about the site. While this information can be dated it is often current enough make basic assumptions about physical security.
+Industrial control environments have large footprints. These facilities can be large. Google Maps provides [satellite views](https://www.google.com/maps/@27.8950877,-97.2678658,3746m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D){:target="_blank"} of public areas. These views provide information about ingress and egress from industrial sites. Understanding the address of a site allows the area to be searched using a top-down view. It also may provide a street view of the location which can show parking areas, guard shacks, cameras, and other details about the site. While this information can be dated it is often current enough make basic assumptions about physical security.
 
 The complexity of critical infrastructure and the societies dependency on the delivery of many services means that information needs to be shared across organizations. There are public and private services that can provide details about different types of infrastructures. Information about private industries is often publicized through media, business research, and governmental oversight. If it is on the internet, it is available to everyone. Some of these sites require accounts and may require approval to access the information. Other sites are maintained as open project that may not require accounts. These services vary but the can provide interesting details about the size, scope, and deployment of technologies in different sectors. While this information may be dated, it is a starting point. 
 
@@ -17,6 +17,7 @@ Review the following resources to understand geolocation resources for each sect
 * Hunt for resources in your state or country?
     * What is the closest substation to your home?
     * What is the closest refinery to your home?
+    * Where is the closest farm to your home? - besides your home :wink:
 * Are we missing sectors?
 * Can you find other mapping resources for these and other sectors?
 
@@ -45,7 +46,8 @@ Review the following resources to understand geolocation resources for each sect
 
 ### Roadways
 
-* Bureau of Transportation Statistics: [Transportation Geography of the United States](https://www.bts.gov/geography/geospatial-2/transportation-geography-united-states-2025){:target="_blank"}
+* Bureau of Transportation Statistics: 
+    * [Transportation Geography of the United States](https://www.bts.gov/geography/geospatial-2/transportation-geography-united-states-2025){:target="_blank"}
     * [Major roadways and border crossings PDF](https://www.bts.gov/sites/bts.dot.gov/files/docs/Transportation_Geography_of_the_United_States_2025.pdf){:target="_blank"}
             
 ### Airport Maps
@@ -57,9 +59,37 @@ Review the following resources to understand geolocation resources for each sect
 ### Chemical Manufacturing
 * [Dun&Dradstreet U.S. Chemical Manufacturing Companies List](https://www.dnb.com/business-directory/company-information.chemical_manufacturing.us.html){:target="_blank"}
 * [IndustrySelect Top 10 Chemical Manufacturing Plants in US](https://www.industryselect.com/blog/top-10-chemical-manufacturers-in-the-us){:target="_blank"}
+* [EPA](https://www.epa.gov/){:target="_blank"}
+    * [Chemicals, Pesticides and Toxic Topics](https://www.epa.gov/environmental-topics/chemicals-pesticides-and-toxics-topics){:target="_blank"}
+    * [EPA TRI Explorer Release Reports](https://enviro.epa.gov/triexplorer/tri_release.chemical){:target="_blank"}
+    * [Nueces County, Texas](https://enviro.epa.gov/triexplorer/release_chem?p_view=COCH&trilib=TRIQ1&sort=_VIEW_&sort_fmt=1&state=48&county=48355&chemical=All+chemicals&industry=ALL&year=2023&tab_rpt=1&fld=RELLBY&fld=TSFDSP){:target="_blank"}
 
 ### Food Supply
 * Cold Storage
     * [Top 10 Cold Change Logistics Companies in USA](https://www.hopstack.io/blog/top-cold-chain-companies-us){:target="_blank"}
     * [Global Cold Chain Alliance](https://www.gcca.org/resource/2023-gcca-north-american-top-25-list-of-refrigerated-warehousing-and-logistics-providers-2/){:target="_blank"}
+* [Texas Farm Finder](https://www.txfarmfinder.com/product-maps){:target="_blank"}
+* [Texas Department of Agriculture: Farm Fresh Network](https://www.squaremeals.org/FandN-Resources/Texas-Farm-Fresh/Texas-Farm-Fresh-Network/Map-of-Texas-Farm-Fresh-Network-Members){:target="_blank"}
+* [Factory Farm Nation: 2024 Edition](https://storymaps.arcgis.com/stories/cc02f97b1129447db2420eb8b6b258e1){:target="_blank"}
+
+
+### Oil and Gas
+* [National Energy and Petrochemical Map](https://www.arcgis.com/apps/webappviewer/index.html?appid=0cdff7e116c0425fa55d1226e9204477){:target="_blank"}
+* [Wells in Texas](https://ft.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d40eb3dcd8084c2fbd952c56f65bbb89){:target="_blank"}
+* Comprehensive List of Refineries in Texas
+    * [Arnold and Itkin LLP](https://www.arnolditkin.com/blog/plant-accidents/comprehensive-list-of-refineries-in-texas/){:target="_blank"}
+    * [The White Law Firm](https://www.wilhitelawfirm.com/blog/list-of-texas-refineries/){:target="_blank"}
+* [Texas Railroad Commission of Texas Maps Data](https://www.rrc.texas.gov/oil-and-gas/publications-and-notices/maps/){:target="_blank"}
+
+### Water
+* [Water / Waste Water Maps](https://www.waterandwastewater.com/us-wastewater-treatment-plants-map/){:target="_blank"}
+* [EPA](https://www.epa.gov/){:target="_blank"}
+    * [Water Topics](https://www.epa.gov/environmental-topics/water-topics){:target="_blank"}
+    * [My Waterway](https://mywaterway.epa.gov/){:target="_blank"}
+        * [Nueces County, Texas Drinking Water](https://mywaterway.epa.gov/community/Corpus%20Christi,%20TX,%20USA%20(Nueces%20County)/drinking-water){:target="_blank"}
+* [Facility Reports](https://ordspub.epa.gov/ords/sfdw_rest/r/sfdw/sdwis_fed_reports_public/6?p6_report=FAC){:target="_blank"}
+    * [Corpus Christi Facility Reports](https://ordspub.epa.gov/ords/sfdw_rest/r/sfdw/sdwis_fed_reports_public/fd?ireq_pwsid=TX1780003&clear=12,RIR){:target="_blank"}
+* [AWWA Water Map](https://experience.arcgis.com/experience/a54e850eed3f493db0835e8c6b08c2ba){:target="_blank"}
+* [Texas Public Utility Commission - Water and Sewer CNN Viewer](https://www.puc.texas.gov/industry/water/utilities/map.aspx){:target="_blank"}
+* [Texas Wastewater Outfalls](https://experience.arcgis.com/experience/262c0c7bfddf4d6da7f59552f652f197/){:target="_blank"}
 
