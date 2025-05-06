@@ -5,11 +5,17 @@ layout: default
 # OSINT Workshop
 ## Task 2: ICS / OT Passive Geolocation Reconnaissance By Sector
 
-Review the following resources to understand geolocation resources for each sector. 
+Industrial control environments have large footprints. These facilities can be large. Google Maps provides satellite views of public areas. These views provide information about ingress and egress from industrial sites. Understanding the address of a site allows the area to be searched using a top-down view. It also may provide a street view of the location which can show parking areas, guard shacks, cameras, and other details about the site. While this information can be dated it is often current enough make basic assumptions about physical security.
+
+The complexity of critical infrastructure and the societies dependency on the delivery of many services means that information needs to be shared across organizations. There are public and private services that can provide details about different types of infrastructures. Information about private industries is often publicized through media, business research, and governmental oversight. If it is on the internet, it is available to everyone. Some of these sites require accounts and may require approval to access the information. Other sites are maintained as open project that may not require accounts. These services vary but the can provide interesting details about the size, scope, and deployment of technologies in different sectors. While this information may be dated, it is a starting point. 
 
 ### Self-paced Questions 
 
+Review the following resources to understand geolocation resources for each sector. 
+
 * Hunt for resources in your state or country?
+    * What is the closest substation to your home?
+    * What is the closest refinery to your home?
 * Are we missing sectors?
 * Can you find other mapping resources for these and other sectors?
 
