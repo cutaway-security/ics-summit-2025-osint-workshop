@@ -11,7 +11,7 @@ Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event whe
 ### Agenda
 
 * Task 1: Outline Workshop's OSINT Process
-* Task 2: ICS / OT Passive Geolocation Reconnaissance By Sector
+* [Task 2](task2.md): ICS / OT Passive Geolocation Reconnaissance By Sector
 * Task 3: Identify Student Targets
   * List of Industrial Sectors
   * ChatGPT and Gemeni Query
