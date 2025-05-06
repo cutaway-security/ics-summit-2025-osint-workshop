@@ -20,6 +20,6 @@ Run the following query and use the randomly identified target as the focus of y
 
 The `Be succinct` statement in this query helps to prevent overly verbose responses from the AI. Remove that part if you want a bit more detail about the selection from the AI tool.
 
-```AsciiDoc
+```asciidoc
 For the industrial industries in the following list, pick one of the industries randomly and then find a company that provides products or services in that industry. Provide the name of the company and the primary website for that company. Be succinct. ["Aerospace and defense","Automotive","Electrical electronics and semiconductors","Machinery","Fabricated metals","Furniture and wood products","Plastics and rubber","Medical products ","Electric Generation","Electric Transmission","Electric Distribution","Gas/Oil Exploration and production","Gas/Oil Pipeline","Gas/Oil Refining","Cement and glass","Chemical and petrochemical","Food and beverage","Metals (production)","Pharmaceuticals","Pulp and paper","Textiles","Waste and water","Retail","Wholesale","Logistics","Rail / Train","Maritime","Ports","Airports"]
 ```
