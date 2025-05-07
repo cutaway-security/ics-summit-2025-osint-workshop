@@ -4,6 +4,7 @@ layout: default
 
 # OSINT Workshop
 [Agenda](./index.md)
+
 ## Task 3: Student Targets Identification
 
 Creating a realistic OSINT target is difficult and, in my opinion, not very realistic. Hence, conducting OSINT on a live target will be a better experiences. However, it is unfair to have the workshop focus on a single target. Therefore, we need another way.
@@ -21,3 +22,37 @@ Run the following query and use the randomly identified target as the focus of y
 The `Be succinct` statement in this query helps to prevent overly verbose responses from the AI. Remove that part if you want a bit more detail about the selection from the AI tool.
 
 > For the industrial industries in the following list, pick one of the industries randomly and then find a company that provides products or services in that industry. Provide the name of the company and the primary website for that company. Be succinct. ["Aerospace and defense","Automotive","Electrical electronics and semiconductors","Machinery","Fabricated metals","Furniture and wood products","Plastics and rubber","Medical products ","Electric Generation","Electric Transmission","Electric Distribution","Gas/Oil Exploration and production","Gas/Oil Pipeline","Gas/Oil Refining","Cement and glass","Chemical and petrochemical","Food and beverage","Metals (production)","Pharmaceuticals","Pulp and paper","Textiles","Waste and water","Retail","Wholesale","Logistics","Rail / Train","Maritime","Ports","Airports"]
+
+### List of Industrial Target Sectors
+
+In the [SANS ICS410: ICS/SCADA Security Essentials](https://www.sans.org/cyber-security-courses/ics-scada-cyber-security-essentials/){:target="_blank"} course we provide the students with an understanding of the large number of industrial and automation sectors that are out there. These sectors have a variety of owners / operators, vendors, integrators, and solution providers. This is one of the reasons that industrial and automation jobs are so exciting which also makes the potential for an exciting and diverse ICS/OT cybersecurity career possible. Here is a short list of some of the industrial and automation sectors that we highlight in the course and have used here.
+
+* Aerospace and defense
+* Automotive
+* Electrical electronics and semiconductors
+* Machinery
+* Fabricated metals
+* Furniture and wood products
+* Plastics and rubber
+* Medical products
+* Electric Generation
+* Electric Transmission
+* Electric Distribution
+* Gas/Oil Exploration and production
+* Gas/Oil Pipeline
+* Gas/Oil Refining
+* Cement and glass
+* Chemical and petrochemical
+* Food and beverage
+* Metals (production)
+* Pharmaceuticals
+* Pulp and paper
+* Textiles
+* Waste and water
+* Retail
+* Wholesale
+* Logistics
+* Rail / Train
+* Maritime
+* Ports
+* Airports

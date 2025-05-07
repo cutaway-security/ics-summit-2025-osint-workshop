@@ -53,9 +53,16 @@ Before completing this workshop, do pause the scan. You can restart it when you 
 ### Questions to Answer
 
 1. How many subdomains does the organization have?
-2. Are any of these subdomains for test servers?
+2. Are any of these subdomains for test servers or remote access?
 3. Were any API endpoints identified?
-4. Were any remote access servers identified?
-5. Did you get a list of known email addresses?
-6. Were any of these email addresses members of known, publicly exposed, data breaches?
-7. How long did the scan take? Note: The `All` scan will take significantly longer.
+4. Did you get a list of known email addresses?
+5. Were any of these email addresses members of known, publicly exposed, data breaches?
+6. How long did the scan take? Note: The `All` scan will take significantly longer.
+7. Can you pull this data into an AI / LLM tool to begin corelating data between organizations? (Don't worry, I've got [Mick Douglas](https://www.linkedin.com/in/mick-douglas){:target="_blank"} looking into this.)
+
+### AI Analysis Query
+
+Using an AI tool, run the following query to help identify areas of focus. These results should be used to help organize your thoughts and also remind you of some of the features you may have forgotten or did not know about. Adjust the query if it is not specific enough about SpiderFoot's capabilities or try one of the other AI tools.
+
+> Considering the output of a SpiderFoot passive analysis, what are the key areas I should review when conducting an OSINT analysis of my company with the intent to understand potential disclosures and vulnerabilities?
+
