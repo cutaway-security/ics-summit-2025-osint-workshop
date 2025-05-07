@@ -12,7 +12,7 @@ The complexity of critical infrastructure and the societies dependency on the de
 
 ### Self-paced Questions 
 
-Review the following resources to understand geolocation resources for each sector. 
+Review the following resources in the [maps and data section](#industrial-resource-maps-and-data-sites) to understand some of the internet accessible geolocation resources for each sector. 
 
 * Hunt for resources in your state or country?
     * What is the closest substation to your home?

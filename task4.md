@@ -24,11 +24,11 @@ The following examples will be examples of how to run the SpiderFoot tool in Kal
 
 2. Run the following command to start the SpiderFoot web interface on the localhost on port 5000.
 
-`spiderfoot -l 127.0.0.1:5000`
+    `spiderfoot -l 127.0.0.1:5000`
 
 3. Open the web browser and navigate to the following URL.
 
-`https://127.0.0.1:5000`
+    `https://127.0.0.1:5000`
 
 4. Once the tool is running, locate and click the `New Scan` tab in the main menu.
 
