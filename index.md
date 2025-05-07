@@ -12,11 +12,8 @@ Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event whe
 
 * [Task 1](task1.md): Outline of the Workshop's OSINT Process
 * [Task 2](task2.md): ICS / OT Passive Geolocation Reconnaissance By Sector
-* [Task 3](task3.md): Student Targets Identification
-* [Task 4](task4.md): Start Spiderfoot Information Gathering
-  * What is Spiderfoot
-  * Starting Passive Spiderfoot Scan using Kali
-  * Review of results (after long run)
+* [Task 3](task3.md): Student Target Identification
+* [Task 4](task4.md): Start SpiderFoot Information Gathering
 * [Task 5](./task5.md): Domain Name Service Exploration
   * Common Remote Access Subdomains:
     * citrix, rdp, nvc, vpn, remote, gateway, access, support, bastion, jump, portal, ctx, netscalar, receiver, zcalar, rdgateway, rdweb, tsgateway, pulse, secure, sslvpn, asa, bomgar, access, fortigate
