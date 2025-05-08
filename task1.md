@@ -35,7 +35,6 @@ Also, by all means, please move on to a new task when you are ready. Or, go back
 
 We want to have nice things. Please play nice.
 
-
 ## Workshop Objectives
 
 Workshop attendees and students will be introduced to the following OSINT tactics, techniques, and tools during the workshop.
