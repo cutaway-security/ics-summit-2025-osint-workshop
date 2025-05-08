@@ -4,6 +4,7 @@ layout: default
 
 # OSINT Workshop
 [Agenda](./index.md)
+
 ## Task 1: Workshop's OSINT Process Outline
 
 This workshop is designed to provide an introduction to gathering publicly accessible information about an organization's control environment. We will use a combination of teaching techniques but will rely heavily on students doing OSINT lab exercises. The exercise activities will include doing manual and automated reviews of targets involved with industrial and automation control sectors. 
@@ -14,7 +15,10 @@ Also, by all means, please move on to a new task when you are ready. Or, go back
 
 ## WARNING
 
-We are **NOT** here to:
+> [!WARNING]
+> We are **NOT** here to break things, people, or organizations.
+
+**DO NOT:**
 
 * hack things, 
 * break into things, 
