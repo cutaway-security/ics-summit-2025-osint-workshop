@@ -6,7 +6,7 @@ layout: default
 ## OSINT Workshop
 ### Introduction
 
-Welcome to the SANS ICS Summit 2025 OSINT Workshop. This is a two-hour event where we will walk through some basic concepts and techniques for conducting [Open Source Intelligence (OSINT)](https://www.sans.org/osint/){:target="_blank"} analysis of targets. We are going to do this analysis without loading commercial tools or tools that require accounts or API keys. But, don't let that stop you. Follow the process using your commercial, authenticated, and custom tools to do this workshop.
+Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-training-events/ics-security-summit-2025/){:target="_blank"} OSINT Workshop. This is a two-hour event where we will walk through some basic concepts and techniques for conducting [Open Source Intelligence (OSINT)](https://www.sans.org/osint/){:target="_blank"} analysis of targets. We are going to do this analysis without loading commercial tools or tools that require accounts or API keys. But, don't let that stop you. Follow the process using your commercial, authenticated, and custom tools to do this workshop.
 
 ### Agenda and Table of Contents
 
