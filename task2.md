@@ -26,8 +26,6 @@ Review the following resources in the [maps and data section](#industrial-resour
 
 Using an AI tool, run the following query to help identify areas of focus. These results should be used to help organize your thoughts and also remind you of some of the online resources you may have forgotten or did not know about. Modify this statement by changing `chicken ranches` to a different area of focus and `Texas` to the geolocation of your choice.
 
-> [!NOTE]
-
 > Provide me recommendations for online mapping resources to understand the distribution of large chicken ranches in Texas.
 
 ## Industrial Resource Maps and Data Sites
