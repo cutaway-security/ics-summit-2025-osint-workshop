@@ -4,6 +4,7 @@ layout: default
 
 # OSINT Workshop
 [Agenda](./index.md)
+
 ## Task 2: ICS / OT Passive Geolocation Reconnaissance By Sector
 
 Industrial control environments have large footprints. These facilities can be large. Google Maps provides [satellite views](https://www.google.com/maps/@27.8950877,-97.2678658,3746m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D){:target="_blank"} of public areas. These views provide information about ingress and egress from industrial sites. Understanding the address of a site allows the area to be searched using a top-down view. It also may provide a street view of the location which can show parking areas, guard shacks, cameras, and other details about the site. While this information can be dated it is often current enough make basic assumptions about physical security.
@@ -25,6 +26,7 @@ Review the following resources in the [maps and data section](#industrial-resour
 
 Using an AI tool, run the following query to help identify areas of focus. These results should be used to help organize your thoughts and also remind you of some of the online resources you may have forgotten or did not know about. Modify this statement by changing `chicken ranches` to a different area of focus and `Texas` to the geolocation of your choice.
 
+> [!NOTE]
 > Provide me recommendations for online mapping resources to understand the distribution of large chicken ranches in Texas
 
 ## Industrial Resource Maps and Data Sites
