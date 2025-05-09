@@ -59,7 +59,6 @@ Before completing this workshop, do pause the scan. You can restart it when you 
 4. Did you get a list of known email addresses?
 5. Were any of these email addresses members of known, publicly exposed, data breaches?
 6. How long did the scan take? Note: The `All` scan will take significantly longer.
-7. Can you pull this data into an AI / LLM tool to begin corelating data between organizations? (Don't worry, I've got [Mick Douglas](https://www.linkedin.com/in/mick-douglas){:target="_blank"} looking into this.)
 
 ### AI Analysis Query
 
@@ -67,3 +66,6 @@ Using an AI tool, run the following query to help identify areas of focus. These
 
 > Considering the output of a SpiderFoot passive analysis, what are the key areas I should review when conducting an OSINT analysis of my company with the intent to understand potential disclosures and vulnerabilities?
 
+### Next Step
+
+When you are done, move onto [Task 5](task5.md): Domain Name Service Exploration.

@@ -14,14 +14,7 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 * [Task 2](task2.md): ICS / OT Passive Geolocation Reconnaissance By Sector
 * [Task 3](task3.md): Student Target Identification
 * [Task 4](task4.md): Start SpiderFoot Information Gathering
-* [Task 5](./task5.md): Domain Name Service Exploration
-  * Common Remote Access Subdomains:
-    * citrix, rdp, nvc, vpn, remote, gateway, access, support, bastion, jump, portal, ctx, netscalar, receiver, zcalar, rdgateway, rdweb, tsgateway, pulse, secure, sslvpn, asa, bomgar, access, fortigate
-  * AI Query for Lab servers by sector
-    * "What are some names for lab analytic services and servers in the following industrial field: gas/oil, electrical, food/beverage, water/wastewater, chemical, petrochemical, Pharmaceuticals"  
-  * DNSDumpster: https://dnsdumpster.com/
-  * Subdomain Finder: https://subdomainfinder.c99.nl/
-  * VirusTotal: https://www.virustotal.com/gui/home/search
+* [Task 5](task5.md): Domain Name Service Exploration
 * [Task 6](task6.md): Identify External Remote Access
   * Using Shodan.io
 * [Task 7](task7.md): Document Exposure Analysis

@@ -56,3 +56,7 @@ In the [SANS ICS410: ICS/SCADA Security Essentials](https://www.sans.org/cyber-s
 * Maritime
 * Ports
 * Airports
+
+### Next Step
+
+When you are done, move onto [Task 4](task4.md): Start SpiderFoot Information Gathering.
