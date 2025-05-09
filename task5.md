@@ -35,23 +35,23 @@ The following commands can be copied into a PowerShell terminal.
 
 1. Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
 
-```ps1con
-$h="acme.com"
-```
+    ```ps1con
+    $h="acme.com"
+    ```
 
 2. Create an array of remote access services or common host names.
 
-```ps1con
-$names = @("citrix", "rdp", "nvc", "vpn", "remote", "gateway", "access", "support", "anydesk", "secure-access", "remote-access", "bastion", "jump", "portal", "ctx", "netscalar", "receiver", "zscalar", "rdgateway", "rdweb", "tsgateway", "pulse", "secure", "sslvpn", "asa", "bomgar", "fortigate")
-```
+    ```ps1con
+    $names = @("citrix", "rdp", "nvc", "vpn", "remote", "gateway", "access", "support", "anydesk", "secure-access", "remote-access", "bastion", "jump", "portal", "ctx", "netscalar", "receiver", "zscalar", "rdgateway", "rdweb", "tsgateway", "pulse", "secure", "sslvpn", "asa", "bomgar", "fortigate")
+    ```
 
 3. Loop through the array, collect the results, and print anything that returned an IPv4 address.
 
-```ps1con
-$results = @()
-foreach ($n in $names){ $results+=(Resolve-DnsName "$n.$h" -DnsOnly -QuickTimeout -ErrorAction SilentlyContinue -WarningAction SilentlyContinue); }
-foreach ($r in $results){ if ($r.IP4Address) { Write-Host $r.Name $r.IP4Address } }
-```
+    ```ps1con
+    $results = @()
+    foreach ($n in $names){ $results+=(Resolve-DnsName "$n.$h" -DnsOnly -QuickTimeout -ErrorAction SilentlyContinue -WarningAction SilentlyContinue); }
+    foreach ($r in $results){ if ($r.IP4Address) { Write-Host $r.Name $r.IP4Address } }
+    ```
 
 4. Add the results to your DNS notes.
 
@@ -61,21 +61,21 @@ There are many ways to do DNS queries in Linux, particularly penetration testing
 
 1. Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
 
-```zsh
-h="acme.com"
-```
+    ```zsh
+    h="acme.com"
+    ```
 
 2. Create a list of remote access services or common host names.
 
-```zsh
-names=("citrix" "rdp" "nvc" "vpn" "remote" "gateway" "access" "support" "anydesk" "secure-access" "remote-access" "bastion" "jump" "portal" "ctx" "netscalar" "receiver" "zscalar" "rdgateway" "rdweb" "tsgateway" "pulse" "secure" "sslvpn" "asa" "bomgar" "fortigate")
-```
+    ```zsh
+    names=("citrix" "rdp" "nvc" "vpn" "remote" "gateway" "access" "support" "anydesk" "secure-access" "remote-access" "bastion" "jump" "portal" "ctx" "netscalar" "receiver" "zscalar" "rdgateway" "rdweb" "tsgateway" "pulse" "secure" "sslvpn" "asa" "bomgar" "fortigate")
+    ```
 
 3. Loop through the list, collect the results, and print anything that returned an IPv4 address.
 
-```zsh
-for n in $names; do host "$n.$h" | grep -v -e "not found" -e alias -e handled | cut -d' ' -f1,4; done 
-```
+    ```zsh
+    for n in $names; do host "$n.$h" | grep -v -e "not found" -e alias -e handled | cut -d' ' -f1,4; done 
+    ```
 
 4. Add the results to your DNS notes.
 
