@@ -31,19 +31,21 @@ There are automated tools that can search for these server names. However, we sh
 
 ##### PowerShell Manual DNS Resolution
 
-Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
+The following commands can be copied into a PowerShell terminal.
+
+1. Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
 
 ```ps1con
 $h="acme.com"
 ```
 
-Create an array of remote access services or common host names.
+2. Create an array of remote access services or common host names.
 
 ```ps1con
 $names = @("citrix", "rdp", "nvc", "vpn", "remote", "gateway", "access", "support", "anydesk", "secure-access", "remote-access", "bastion", "jump", "portal", "ctx", "netscalar", "receiver", "zscalar", "rdgateway", "rdweb", "tsgateway", "pulse", "secure", "sslvpn", "asa", "bomgar", "fortigate")
 ```
 
-Loop through the array, collect the results, and print anything that returned an IPv4 address.
+3. Loop through the array, collect the results, and print anything that returned an IPv4 address.
 
 ```ps1con
 $results = @()
@@ -51,35 +53,35 @@ foreach ($n in $names){ $results+=(Resolve-DnsName "$n.$h" -DnsOnly -QuickTimeou
 foreach ($r in $results){ if ($r.IP4Address) { Write-Host $r.Name $r.IP4Address } }
 ```
 
-Add the results to your DNS notes.
+4. Add the results to your DNS notes.
 
 ##### Linux Manual DNS Resolution
 
 There are many ways to do DNS queries in Linux, particularly penetration testing virtual machines like Kali linux. Common tools include [dig](https://en.wikipedia.org/wiki/Dig_(command)){:target="_blank"}, [nslookup](https://en.wikipedia.org/wiki/Nslookup){:target="_blank"}, [host](https://en.wikipedia.org/wiki/Host_(Unix)){:target="_blank"}, [dnsrecon](https://github.com/darkoperator/dnsrecon){:target="_blank"}, and others. 
 
-Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
+1. Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
 
 ```zsh
 h="acme.com"
 ```
 
-Create a list of remote access services or common host names.
+2. Create a list of remote access services or common host names.
 
 ```zsh
 names=("citrix" "rdp" "nvc" "vpn" "remote" "gateway" "access" "support" "anydesk" "secure-access" "remote-access" "bastion" "jump" "portal" "ctx" "netscalar" "receiver" "zscalar" "rdgateway" "rdweb" "tsgateway" "pulse" "secure" "sslvpn" "asa" "bomgar" "fortigate")
 ```
 
-Loop through the list, collect the results, and print anything that returned an IPv4 address.
+3. Loop through the list, collect the results, and print anything that returned an IPv4 address.
 
 ```zsh
 for n in $names; do host "$n.$h" | grep -v -e "not found" -e alias -e handled | cut -d' ' -f1,4; done 
 ```
 
-Add the results to your DNS notes.
+4. Add the results to your DNS notes.
 
 ### Identify Target Company Subdomains
 
-The target company may not use these hostnames for remote their remote access servers. It would also be useful to understand if there are any external servers related to ICS / OT services. There are several online tools that can provide information about a domain's subdomains. These tools gather internet DNS information without enumerating DNS using brute force techniques.
+The target company may not use these host names for remote their remote access servers. It would also be useful to understand if there are any external servers related to ICS / OT services. There are several online tools that can provide information about a domain's subdomains. These tools gather internet DNS information without enumerating DNS using brute force techniques.
 
 #### DNSDumster
 
@@ -128,6 +130,6 @@ If the DNS analysis resulted in a range of IP's for the target company, consider
 3. Were any API endpoints identified?
 4. Did you get a list of known email addresses?
 
-### Next Step
+## Next Step
 
 When you are done, move onto [Task 6](task6.md): Identify External Remote Access.

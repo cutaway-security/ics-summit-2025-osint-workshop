@@ -66,6 +66,6 @@ Using an AI tool, run the following query to help identify areas of focus. These
 
 > Considering the output of a SpiderFoot passive analysis, what are the key areas I should review when conducting an OSINT analysis of my company with the intent to understand potential disclosures and vulnerabilities?
 
-### Next Step
+## Next Step
 
 When you are done, move onto [Task 5](task5.md): Domain Name Service Exploration.

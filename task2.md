@@ -102,6 +102,6 @@ Using an AI tool, run the following query to help identify areas of focus. These
 * [Texas Public Utility Commission - Water and Sewer CNN Viewer](https://www.puc.texas.gov/industry/water/utilities/map.aspx){:target="_blank"}
 * [Texas Wastewater Outfalls](https://experience.arcgis.com/experience/262c0c7bfddf4d6da7f59552f652f197/){:target="_blank"}
 
-### Next Step
+## Next Step
 
 When you are done, move onto [Task 3](task3.md): Student Target Identification.
