@@ -17,8 +17,7 @@ Google has already indexed most of the online web services of anything connected
 site:acme.com login
 ```
 
-The information returned will have a combination of the target's client / customer portals and remote access services. Review these results for other useful terms to use in search filters, such as `sso`. No matter your results for these searches, it is possible that the remote access solution your target uses does not get identified by the term `login`. Why don't we ask an AI tool for some recommendationed advanced search terms? Consider running or updating the following query for your AI tool. Note that this query includes the list of remote access terms we used in [Task 5](task5.md).
-
+The information returned will have a combination of the target's client / customer portals and remote access services. Review these results for other useful terms to use in search filters, such as `sso`. No matter your results for these searches, it is possible that the remote access solution your target uses does not get identified by the term `login`. Why don't we ask an AI tool for some recommendations about advanced search terms? Consider running or updating the following query for your AI tool. Note that this query includes the list of remote access terms we used in [Task 5](task5.md).
 
 > Using the following list of potential remote access solutions, what are the best google search filters to use to identify remote access services. Be succinct. "citrix", "rdp", "nvc", "vpn", "remote", "gateway", "access", "support", "anydesk", "secure-access", "remote-access", "bastion", "jump", "portal", "ctx", "netscalar", "receiver", "zscalar", "rdgateway", "rdweb", "tsgateway", "pulse", "secure", "sslvpn", "asa", "bomgar", "fortigate"
 
@@ -28,11 +27,23 @@ To leverage the experiences of many security researchers, search the [Exploit-DB
 
 **HINT**: You may be able to combine queries using the `OR` operator. This would speed up the searches.
 
-**HINT**: Why do this AI query more than once? Save your techniques to a personal cheatsheet or [Gist.github.io](https://gist.github.com/){:target="_blank"}.
+**HINT**: Why do this AI query more than once? Save your techniques to a personal cheat sheet or [Gist.github.io](https://gist.github.com/){:target="_blank"} so help speed up your future analysis efforts.
 
 ### Internet Crawler Searches
 
-There are other 
+There are many online services that crawl the internet and gather information about the online assets. Some of these services allow unregistered users to search their scan results but limit the number of results, access to detailed information, and exportation of results. Registering with the service usually provides a additional functionality but limits the number of queries or access to the service's API interface.
+
+Currently the most popular online search tools are [Shodan.io](https://www.shodan.io/){:target="_blank"}, [Censys](https://censys.io/){:target="_blank"}, [Hunter Search Engine](https://hunter.how/), and [FOCA](https://en.fofa.info/){:target="_blank"}. Each search tool provides information is a slightly different results format and reporting output. Let's review each service to see the information that is returned by the tool for the remote access servers identified in the previous tasks. You can also search on the target's external subnets if it was identified using ASN data.
+
+**HINT**: These steps can be performed without registering with the search tool. If you have an account, or are willing to make one, register with the service to see the additional functionality the tool provides.
+
+1. Conduct a search using the FQDN or IP address for the remote access server identified in previous tasks.
+
+2. Review the results to determine if the listening services provide any details about the service and the target company. 
+
+3. Review the results to determine if the search tool identifies known vulnerabilities in the listening services or operating system. Add this information to your notes.
+
+4. If your target has a range of external IP addresses, conduct the search again using the IP range. Note any additional remote access services or ICS / OT assets in this data.
 
 ## Next Step
 

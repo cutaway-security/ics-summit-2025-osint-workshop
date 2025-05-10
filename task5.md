@@ -83,7 +83,7 @@ There are many ways to do DNS queries in Linux, particularly penetration testing
 
 The target company may not use these host names for remote their remote access servers. It would also be useful to understand if there are any external servers related to ICS / OT services. There are several online tools that can provide information about a domain's subdomains. These tools gather internet DNS information without enumerating DNS using brute force techniques.
 
-#### DNSDumster
+#### DNSDumster Search
 
 The [DNSDumpster](https://dnsdumpster.com/){:target="_blank"} tool will provide a lot of valuable information about a target domain. The data returned for each identified host includes FQDN, IP address, [Autonomous System Number (ASN)](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)){:target="_blank"}, ASN Name, and Open Services. The results, however, are limited to the first fifty results for free queries.
 
@@ -97,7 +97,7 @@ The [DNSDumpster](https://dnsdumpster.com/){:target="_blank"} tool will provide 
 
 5. Review the ASN Name field to determine if any of the ASN numbers are directly tied to the target company. Confirmation may require additional analysis. For the associated ASNs, note the IP ranges identified by ASN numbers. 
 
-#### Subdomain Finder
+#### Subdomain Finder Search
 
 The [Subdomain Finder](https://subdomainfinder.c99.nl/){:target="_blank"} tool will provide information about subdomains for the target's domain. Scan results using this tool include information about the FQDN, IP address, and if the [CloudFlare](https://en.wikipedia.org/wiki/Cloudflare){:target="_blank"} service was detected. The results also include a summary of the IP addresses, a list of subdomains without IP addresses, and (interestingly) the results of previous scans.
 
@@ -110,6 +110,18 @@ The [Subdomain Finder](https://subdomainfinder.c99.nl/){:target="_blank"} tool w
 4. Review the results. Extract them by copying to the clipboard or downloading the CSV or JSON file.
 
 FUTURE TESTING: The tool provides the ability to `Check Status` for each of the subdomains. Clicking on the `Check Status` button enables the `Status` column. Each FQDN needs to be check individually by clicking the `Check` button.
+
+### Certificate Analysis
+
+Online services require secure communications. These secure communications require Transport Security Layer (TLS) certificates that are associated with the company's domain. Most organizations will generate a specific certificate for each online asset rather than using a wildcard certificate to cover all of the first-level subdomains. A search for issued certificates can provide details about online asset like remote access servers.
+
+The online tool [crt.sh](https://crt.sh/){:target="_blank"}, by [Sectigo](https://www.sectigo.com/){:target="_blank"}, maintains a list of issued certificates over time. It can be used to list all of the certificates for a specific target. 
+
+1. Access the [crt.sh](https://crt.sh/){:target="_blank"} site and enter your target's domain into the search text box.
+
+2. Click the `Search` button.
+
+3. Review the results and add relevant information about ICS / OT related hosts to your notes. Export the results to XLSX, if you prefer.
 
 ### Reverse DNS Lookup
 
