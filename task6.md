@@ -13,9 +13,7 @@ Threat actors will explore our external servers, including our external remote a
 
 Google has already indexed most of the online web services of anything connected to the internet. The [Google Advanced Search](https://www.google.co.uk/advanced_search){:target="_blank"} feature allows users to query for specific words in the webpage and to isolate searches to specific sites. A common start to search Google to identify web interfaces that prompt a user to authenticate is (replace `acme.com` with your target site information):
 
-```
-site:acme.com login
-```
+```site:acme.com login```
 
 The information returned will have a combination of the target's client / customer portals and remote access services. Review these results for other useful terms to use in search filters, such as `sso`. No matter your results for these searches, it is possible that the remote access solution your target uses does not get identified by the term `login`. Why don't we ask an AI tool for some recommendations about advanced search terms? Consider running or updating the following query for your AI tool. Note that this query includes the list of remote access terms we used in [Task 5](task5.md).
 

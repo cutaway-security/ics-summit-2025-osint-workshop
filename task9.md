@@ -78,7 +78,7 @@ Search your SpiderFoot - Passive scan for hacked emails.
 
 6. Note any results in your personnel tracking document.
 
-7. Review the `Browser` tab and locate other modules with `email` in the name. Click on each and review contents.
+7. Review the `Browse` tab and locate other modules with `email` in the name. Click on each and review contents.
 
 8. Note any results in your personnel tracking document.
 
