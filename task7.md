@@ -13,9 +13,7 @@ The internet is for sharing information. Organizations share information with th
 
 The [Google Advanced Search](https://www.google.co.uk/advanced_search){:target="_blank"} feature can be used to locate interesting files. Another type of search is to view a domain for specific file extensions. The following command searches the target for all files with the PDF extension (replace `acme.com` with your target site information):
 
-```
-site:acme.com ext:pdf
-```
+```site:acme.com ext:pdf```
 
 The [Exploit-DB GHDB](https://www.exploit-db.com/google-hacking-database){:target="_blank"} provides additional search terms to identify unique files with data that should not be shared publicly. We can do a `Quick Search` for the term `config` but this will only identify a few types of configuration files. To expand our list of configuration files, we can use the AI tool to identify interesting terms for Google Advanced Search. Run the following command in your AI tools and use the results to search your target for leaking configuration files.
 
@@ -30,6 +28,38 @@ Your results should contain terms similar to: ini, conf, config, yaml, json, xml
 3. Add any interesting results to your notes.
 
 Use the [Exploit-DB GHDB](https://www.exploit-db.com/google-hacking-database){:target="_blank"} `Quick Search` field to run a search for these configuration file terms. 
+
+### AI Tool Search for Industrial Terms
+
+At times, interesting information is not contained in a specific document type. The data may be directly displayed as a part of the HTML results. Additionally, searches for document types can return a lot of results and it could have been missed. Searching the target website for key process-related terms may identify interesting relationships and aid in locating leaked information.
+
+Have your AI tool provide you with a query for common terms related to your target's industrial sector. Modify the following query example for your target.
+
+> I am conducting OSINT research for the company `acme.com`. This company provides LNG services. What types of terms should be used to identify documentation for LNG processes and relationships with vendors and integrators? Be succinct.
+
+The terms we received for this query included the following Google search examples. Use your results or modify these results with your knowledge of the target company's specific industry.
+
+```site:acme.com "LNG process"```
+
+```site:acme.com "liquefaction"```
+
+```site:acme.com "regasification"```
+
+```site:acme.com "LNG terminal"```
+
+```site:acme.com "cryogenic"```
+
+```site:acme.com "boil-off gas"```
+
+```site:acme.com "safety procedures LNG"```
+
+```site:acme.com "operating manual LNG"```
+
+```site:acme.com "technical specifications LNG"```
+
+```site:acme.com "flow diagram LNG"```
+
+Add any interesting results to your notes.
 
 ### Cloud Buckets Searches
 

@@ -36,9 +36,11 @@ Emails have been around for a long time. There are most likely common Google Adv
 
 ### AI Tools Email Search
 
+Formatting the advanced search filters for online search engines can be a challenge. Especially when considering the different types of email address obfuscation techniques user use to hide their emails from search engines. But, humans are predictable. Let's see if your AI tool can help in this situation. Try this search in your AI search tools. Update the query if you think it helps.
+
 > When conducting a penetration test to identify OSINT leakage, what is a good google advanced search (google dork) to identify the email format for a company's email and to located email address that may have been entered in online forums? Include methods to detect if the user obfuscated the email using spaces, parenthesis, brackets, and other common methods. Be succinct.
 
-Your results may be similar to the following for searching your target's website.
+Your results may be similar to the following for searching your target's website. This may return limited information, if any.
 
 ```site:acme.com (*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
 
