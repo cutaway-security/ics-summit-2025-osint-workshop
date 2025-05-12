@@ -16,7 +16,7 @@ The following steps are designed to identify a user's email address for the targ
 We are **NOT** here to break things, people, or organizations. 
 **DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies,
 
-## Task 8: Google Email Searches
+### Google Email Searches
 
 Google is always a good place to start. Try these tricks on other search engines for different results.
 
@@ -51,6 +51,36 @@ Searching specific forums can be done as well. Forums specializing in industrial
 Or, you can just search the whole internet. This may return many results and 
 
 ```(*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
+
+### Emails in Breach Disclosures
+
+Users are known to use their corporate email addresses to create accounts on the internet. Most of the time these users are interacting with vendors and integrators websites for which they have legitimate business. Other times, these users are using the data on internet forums or cloud services for industry related knowledge or associations. In the worst case, these users are using their corporate emails on elicit sites to avoid their partners and family from knowing they are involved in these activities. 
+
+In all cases, these third-party sites can be hacked and their data distributed to the internet. These third-party disclosures are commonly referred to as data breaches. Once the data from a breach has been exposed to the internet it is accessible to everyone on the internet. While it seems easy to download and search this information the steps for obtaining, parsing, storing, and maintaining this information can be tedious and expensive.
+
+Services have started to collect this information and provide access to the data for users to determine if their credentials have been exposed. The tool [Have I Been Pwned (HIBP)](https://haveibeenpwned.com/){:target="_blank"} maintains a website where a user can review their individual accounts to determine if an email address was associated to any data breaches. The search tool will return information about the email address provided and all of the data breaches with which it is associated. This allows the user to know if their data and credentials can be obtained and used by threat actors. The service also allows organizations to register to be able to search and monitor their company accounts.
+
+Other companies have followed [HIBP's](https://haveibeenpwned.com/){:target="_blank"} approach to providing users with this information. Many of these services allow for enumeration of this information using a subscription service to access their data using an API key. OSINT tools user these services, typically requiring an API key, to search for the target's users and identified emails in known data breaches. For example, the [SpiderFoot](https://github.com/smicallef/spiderfoot){:target="_blank"} tool has a plugin named [sfp_citidel](https://github.com/smicallef/spiderfoot/blob/master/modules/sfp_citadel.py){:target="_blank"}. The [sfp_citidel](https://github.com/smicallef/spiderfoot/blob/master/modules/sfp_citadel.py){:target="_blank"} plugin is configured to use the data breach search site [Leak - Lookup](https://leak-lookup.com/){:target="_blank"}. This plugin is automatically selected to run during the SpiderFoot - Passive scan, which you may have started during [Task 4](task4.md).
+
+Search your SpiderFoot - Passive scan for hacked emails.
+
+1. Find your SpiderFoot scan in the web browser and select the scan.
+
+2. Locate the tab named `Browse` and click on it.
+
+3. In the `Type` column, locate the item named `Hacked Email Address` and click on the link.
+
+4. The displayed results should show user email addresses in the column labeled `Source Data Element`.
+
+5. Information in the `Data Element` column includes the email address plus the common name for the data breach that leaked the information. 
+
+    **NOTE:** The name of the breach can be reviewed to determine the type of credential data that was exposed in that data breach.
+
+6. Note any results in your personnel tracking document.
+
+7. Review the `Browser` tab and locate other modules with `email` in the name. Click on each and review contents.
+
+8. Note any results in your personnel tracking document.
 
 ## Next Step
 

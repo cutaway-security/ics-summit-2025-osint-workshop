@@ -15,18 +15,8 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 * [Task 4](task4.md): Start SpiderFoot Information Gathering
 * [Task 5](task5.md): Domain Name Service Exploration
 * [Task 6](task6.md): Explore External Remote Access
-  * Using Shodan.io
 * [Task 7](task7.md): Document Exposure Analysis
-  * Search "site:<site>.com "approved subcontractors""
-  * Search ""site:<site>.com radio"
-  * Search "site:<site>.com cybersecurity"
-  * Search "site:<site>.com <process terms>"
-  	* Emerson - DeltaV
-  	* ABB - 800xA
-  	* Rockwell - PlantPAx
 * [Task 8](task8.md): Personnel Analysis
-  * Board of Directors
-  * Linked In
 * [Task 9](task9.md): Email Analysis
 * [Task 10](task10.md): Swagger API Analysis
 
