@@ -24,7 +24,7 @@ Google is always a good place to start. Try these tricks on other search engines
 
 Emails have been around for a long time. There are most likely common Google Advanced Search techniques to identify leaked emails for our target companies.
 
-1. Access the [Exploit-DB GHD]() page and type `email` in the `Quick Search` (the search is automatic).
+1. Access the [Exploit-DB GHD](https://www.exploit-db.com/google-hacking-database){:target="_blank"} page and type `email` in the `Quick Search` (the search is automatic).
 
 2. Review the results and note any searches you would like to perform on your target domain or on the internet in general. 
 
