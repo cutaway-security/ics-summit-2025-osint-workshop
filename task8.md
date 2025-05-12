@@ -5,6 +5,11 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
+## WARNING
+
+We are **NOT** here to break things, people, or organizations. 
+**DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies,
+
 ## Task 8: Personnel Analysis
 
 One of the key OSINT research areas is for a target company's employees. Employees are targeted by threat actor groups because they use the internet for learning and sharing, have knowledge of the target, have the permission and ability to interact with target resources, and have relationships with other companies. Enumerating a company's employees provides a list of targets for phishing campaigns, generation of user account names, generation of email addresses, and (in the worst case) potential blackmail and extortion candidates.
@@ -15,7 +20,7 @@ Companies share information about their employees by documenting organizational 
 
 For workshop purposes, limit review of target employees to first name and last name. We'll use these for considering or generating email addresses in other tasks. We'll also use this when searching online resources, such as [LinkedIn](https://www.linkedin.com/){:target="_blank"}. 
 
-If you are tracking personnel, consider creating a spreadsheet or Comma Separated Value (CSV) document with the following fields, if available. For actual assessments you may want to collect additional information.
+If you are tracking personnel, consider creating a spreadsheet or Comma Separated Value (CSV) document with the following fields, if available. For actual assessments you may want to collect additional information. You can add items, such as certifications and skill sets later
 
 * First Name
 * Last Name
@@ -26,13 +31,43 @@ If you are tracking personnel, consider creating a spreadsheet or Comma Separate
 
 1. Review the target website to identify `executives` and `board of directors`.
 
-2. Review the target website for `organization charts`.
+    ```site:acme.com "executives"```
+
+    ```site:acme.com "board of directors"```
+
+    ```site:acme.com "advisory board"```
+
+2. Review the target website for `organization charts`. This may be a list of actual employees (cybersecurity companies are well known for doing this), [United States Securities and Exchange Commission](https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission) filings, images, media and social media articles, or leaked documents. 
+
+    ```site:acme.com "organization chart" OR "org chart"```
+
+    ```site:acme.com  "annual report" OR "quarterly report"```
+
+    ```site:acme.com  "meet our team"```
 
 3. Review the target website for a list of projects or teams that may identify individuals.
 
+    ```site:acme.com "project management"```
+
+    ```site:acme.com "acceptance testing"```
+
+    ```site:acme.com "effective date"```
+
+    ```site:acme.com "scope of work"```
+
 4. Review the target website for press releases.
 
+    ```site:acme.com "press release"```
+
+    ```site:acme.com "news-release"```
+
+    ```site:acme.com "in the news"```
+
 5. Review the target's career page for employee attestations what might provide information about them.
+
+    ```site:acme.com "careers"```
+
+    ```site:acme.com "employment"```
 
 6. Review PDF, MS Word, MS Excel documents for project documentation. These documents may name specific individuals such as project managers, engineers, operators, inspectors, safety teams, and other personnel specifically assigned to that project.
 
