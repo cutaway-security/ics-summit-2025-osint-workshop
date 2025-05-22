@@ -5,87 +5,89 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## WARNING
+## Task 7: Document Exposure Analysis
 
-We are **NOT** here to break things, people, or organizations. 
-**DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies,
+The internet is for sharing information. Organizations share information with their potential customers, current clients, business partners, shareholders, and the general public. This information often includes data about current services, marketing, partnerships, personnel experience, and other information. When sharing this information there is a potential that additional data is shared unintentionally due to ignorance or misconfigurations. This data can be shared in many forms. These forms include text, HTML, PDF, MS Word, MS Excel, MS PowerPoint, XML, JSON, compressed files, and backups. These files may be found on the target's main website, other online assets, or in cloud services.
 
-## Task 8: Personnel Analysis
+### Google Information Gathering
 
-One of the key OSINT research areas is for a target company's employees. Employees are targeted by threat actor groups because they use the internet for learning and sharing, have knowledge of the target, have the permission and ability to interact with target resources, and have relationships with other companies. Enumerating a company's employees provides a list of targets for phishing campaigns, generation of user account names, generation of email addresses, and (in the worst case) potential blackmail and extortion candidates.
+The [Google Advanced Search](https://www.google.co.uk/advanced_search){:target="_blank"} feature can be used to locate interesting files. Another type of search is to view a domain for specific file extensions. The following command searches the target for all files with the PDF extension (replace `acme.com` with your target site information):
 
-### Enumerate Target Website for Employees
+```site:acme.com ext:pdf```
 
-Companies share information about their employees by documenting organizational charts, lists of executives and directors, and publishing articles. These items can be found by manually reviewing or using Google to search the target website.
+The [Exploit-DB GHDB](https://www.exploit-db.com/google-hacking-database){:target="_blank"} provides additional search terms to identify unique files with data that should not be shared publicly. We can do a `Quick Search` for the term `config` but this will only identify a few types of configuration files. To expand our list of configuration files, we can use the AI tool to identify interesting terms for Google Advanced Search. Run the following command in your AI tools and use the results to search your target for leaking configuration files.
 
-For workshop purposes, limit review of target employees to first name and last name. We'll use these for considering or generating email addresses in other tasks. We'll also use this when searching online resources, such as [LinkedIn](https://www.linkedin.com/){:target="_blank"}. 
+> When using Google to identify leaking configuration files, what are some terms to use for advanced google search.
 
-If you are tracking personnel, consider creating a spreadsheet or Comma Separated Value (CSV) document with the following fields, if available. For actual assessments you may want to collect additional information. You can add items, such as certifications and skill sets later
+Your results should contain terms similar to: ini, conf, config, yaml, json, xml, env.
 
-* First Name
-* Last Name
-* Title
-* Company
-* Domain
-* Email
+1. Conduct searches of your target for each of these file extensions.
 
-1. Review the target website to identify `executives` and `board of directors`.
+2. Consider conducting similar searches using the `intitle`, `inurl`, and`filetype` filter terms.
 
-     * ```site:acme.com "executives"```
-     * ```site:acme.com "board of directors"```
-     * ```site:acme.com "advisory board"```
+3. Add any interesting results to your notes.
 
-2. Review the target website for `organization charts`. This may be a list of actual employees (cybersecurity companies are well known for doing this), [United States Securities and Exchange Commission](https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission){:target="_blank"} filings, images, media and social media articles, or leaked documents. 
+Use the [Exploit-DB GHDB](https://www.exploit-db.com/google-hacking-database){:target="_blank"} `Quick Search` field to run a search for these configuration file terms. 
 
-    ```site:acme.com "organization chart" OR "org chart"```
+### AI Tool Search for Industrial Terms
 
-    ```site:acme.com  "annual report" OR "quarterly report"```
+At times, interesting information is not contained in a specific document type. The data may be directly displayed as a part of the HTML results. Additionally, searches for document types can return a lot of results and it could have been missed. Searching the target website for key process-related terms may identify interesting relationships and aid in locating leaked information.
 
-    ```site:acme.com  "meet our team"```
+Have your AI tool provide you with a query for common terms related to your target's industrial sector. Modify the following query example for your target.
 
-3. Review the target website for a list of projects or teams that may identify individuals.
+> I am conducting OSINT research for the company `acme.com`. This company provides LNG services. What types of terms should be used to identify documentation for LNG processes and relationships with vendors and integrators? Be succinct.
 
-    ```site:acme.com "project management"```
+The terms we received for this query included the following Google search examples. Use your results or modify these results with your knowledge of the target company's specific industry.
 
-    ```site:acme.com "acceptance testing"```
+* ```site:acme.com "LNG process"```
+* ```site:acme.com "liquefaction"```
+* ```site:acme.com "regasification"```
+* ```site:acme.com "LNG terminal"```
+* ```site:acme.com "cryogenic"```
+* ```site:acme.com "boil-off gas"```
+* ```site:acme.com "safety procedures LNG"```
+* ```site:acme.com "operating manual LNG"```
+* ```site:acme.com "technical specifications LNG"```
+* ```site:acme.com "flow diagram LNG"```
 
-    ```site:acme.com "effective date"```
+Add any interesting results to your notes.
 
-    ```site:acme.com "scope of work"```
+### Cloud Buckets Searches
 
-4. Review the target website for press releases.
+Most organizations have turned to the cloud for services, applications, and file sharing. The configuration of these services can change from day-to-day due to normal business operations. Vendors and integrators have also started providing cloud-based services to their clients. It is possible that these services, applications, and file shares have configurations that allow direct access to the application functionality or its data.
 
-    ```site:acme.com "press release"```
+The [Grayhat Warfare](https://grayhatwarfare.com/){:target="_blank"} tool is an online service that searches cloud services for accessible data. The tool provides the ability to search the enumerated information. This is another service that provides limited functionality for unregistered users. Unregistered users will receive a very limited number of search results. Many of these results will be image files with the file extensions PNG and JPG. The results will also include files that are associated with companies that are not your target's assets. Manual analysis will be required to determine if the data is directly or indirectly associated with your target.
 
-    ```site:acme.com "news-release"```
+Let's conduct a search for your target using the [Grayhat Warfare](https://grayhatwarfare.com/){:target="_blank"} tool.
 
-    ```site:acme.com "in the news"```
+**HINT**: These steps can be performed without registering with the search tool. If you have an account, or are willing to make one, register with the service will provide you access to more search results. It will also allow you to limit the search results using `Filename Extensions`.
 
-5. Review the target's career page for employee attestations what might provide information about them.
+1. Access the [Grayhat Warfare](https://grayhatwarfare.com/){:target="_blank"} tool and enter the target's name in the search box.
 
-    ```site:acme.com "careers"```
+2. Click the `Search` button.
 
-    ```site:acme.com "employment"```
+3. Review the results to determine if the data is associated with your target.
 
-6. Review PDF, MS Word, MS Excel documents for project documentation. These documents may name specific individuals such as project managers, engineers, operators, inspectors, safety teams, and other personnel specifically assigned to that project.
+4. Conduct additional searches based on product and service names related to your target and review the results to determine if they are associated with your target's assets.
 
-### LinkedIn Company Search
+5. Add any interesting results to your notes.
 
-[LinkedIn](https://www.linkedin.com/){:target="_blank"} provides a wealth of information about a company and its employees. This social media site can be searched without an account but the results are extremely limited. Searching with an account will provide additional results which will ba associated with the user's account, unless privacy settings have been set on the search user's account. 
+### Data Leak Searches
 
-Conduct a quick search of the [LinkedIn](https://www.linkedin.com/){:target="_blank"} site for the target company's name. Review employees to find the following ICS / OT related skill sets
+An organization does not have to be compromised or hacked to have their data exposed in a data breach. A partner, supplier, or service provider could be breached and the data leaked may contain sensitive information about a third-party. There are many online services that provide `DarkWeb` monitoring to determine when data about an organization have been exposed. The teams for these services obtain, parse, index, and create databases of leaked information. Their service offerings often include automated notification of leaded data associated with their clients. To reduce work, threat actor groups may even be customers of these services, although they typically have access to the data via their `DarkWeb` resources.
 
-* Project manager
-* Document manager
-* ICS equipment programmer
-* ICS / OT cybersecurity team
-* OT network administrator
-* OT windows administrator
-* Control systems engineer
-* Compliance, auditing, governance
-* Safety engineer
-* Project engineer
+The [Intelligence X](https://intelx.io/){:target="_blank"} provides an open source tool to search the data that their team has parsed. Searches on their site provide basic details about leaked information that may be related to a specific domain, URL, email, IP address, and other details. Reviewing the actual data does require a subscription and may be required to filter out false positives. 
+
+1. Access the [Intelligence X](https://intelx.io/){:target="_blank"} website and enter the target's name in the search box..
+
+2. Click the `Search` button.
+
+3. Review the results to determine if the data is associated with your target.
+
+4. Conduct additional searches based on product and service names related to your target and review the results to determine if they are associated with your target's assets.
+
+5. Add any interesting results to your notes.
 
 ## Next Step
 
-When you are done, move onto [Task 9](task9.md): Email Analysis.
+When you are done, move onto [Task 9](task9.md): Personnel Analysis.

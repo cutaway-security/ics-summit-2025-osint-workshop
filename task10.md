@@ -5,46 +5,83 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 10: Swagger API Analysis
+## Task 9: Email Analysis
 
-Applications provide the ability for the target's developers, employees, and partners to interact with different services. Some of these services may be associated with industrial control systems and may provide information about the organization, processes, assets, clients / customers, and partners. The target's online assets should be reviewed to identify any asses that are accessible to the internet.
+In the previous steps you may have identified the format the target company uses for email addresses. Understanding the email domain is important. Some companies use their primary domain. Other companies might add an extension, such as `acme-llc.com`. The user's account name will also have a variety of formats. These can be a combination of first name, first initial, last name, initials, and any combination of the concatenated values.
 
-### API Searches 
+The following steps are designed to identify a user's email address for the target company. Once a few emails have been identified, it is only a matter of scripting to generate a full list of email addresses for known employees.
 
-An Application Programming Interface (API) is a set of rules and protocols that allow software applications to exchange data and communicate. The API provides an interface between clients and servers to send and receive information and take actions. Your target, or their partners, may have exposed an API to the internet to improve data exchange while not realizing the risk and increased attack surface.
+## WARNING
 
-### Swagger Search
+We are **NOT** here to break things, people, or organizations. 
+**DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies,
 
-[Swagger](https://swagger.io/docs/specification/v2_0/what-is-swagger/){:target="_blank"} is a suite of open-source tools that follow the [OpenAPI Specification](https://swagger.io/specification/){:target="_blank"}. Swagger documentation allows teams to provide a structure of the APIs available for specific applications. These details are documented to assist develops and machines in understanding the methods and formatting of data exchanges between clients and servers using the API.
+### Google Email Searches
 
-A common technique for developers is to make this information public. This allows third-party developers to create software and applications that work with the API. Openly providing this information also reduces calls to the help desk or support portals since developers, users, and machines can remotely access the information on their own. However, the API documentation may also leak useful details about private API calls and other functionality. Threat actors can use this information to identify vulnerabilities and configure an exploit using the API. These vulnerabilities may result in data access, data flow injection, remote code execution, privilege escalation, and other attacks.
+Google is always a good place to start. Try these tricks on other search engines for different results.
 
-1. Search your target for Swagger end points and API documentation.
+### Exploit-DB GHD Review
 
-    ```site:acme.com swagger```
+Emails have been around for a long time. There are most likely common Google Advanced Search techniques to identify leaked emails for our target companies.
 
-2. Review the Swagger documentation to understand the API and its functionality.
+1. Access the [Exploit-DB GHD](https://www.exploit-db.com/google-hacking-database){:target="_blank"} page and type `email` in the `Quick Search` (the search is automatic).
 
-3. Update your notes with any interesting findings.
+2. Review the results and note any searches you would like to perform on your target domain or on the internet in general. 
 
-4. Try some other Google Advanced Searches for Swagger end points:
+3. Repeat this review using the following terms in the `Quick Search`: `credentials`, `@`, `accounts`
 
-    ```site:acme.com (inurl:"api" OR inurl:"/swagger/index.html" OR inurl:"/swagger-ui.html")```
+4. Review the results and note any searches you would like to perform on your target domain or on the internet in general.
 
-    ```site:acme.com swagger.json```
+5. Run your searches and note any results in your personnel tracking document.
 
-    ```site:acme.com swagger.yaml```
+### AI Tools Email Search
 
-### API End Points
+Formatting the advanced search filters for online search engines can be a challenge. Especially when considering the different types of email address obfuscation techniques user use to hide their emails from search engines. But, humans are predictable. Let's see if your AI tool can help in this situation. Try this search in your AI search tools. Update the query if you think it helps.
 
-Searches for the term `api` could return additional results. However, the `api` term can also return results associated with [American Petroleum Institute (API)](https://www.api.org/){:target="_blank"}. Hence, other methods may be required to identify the API attack surface of your target.
+> When conducting a penetration test to identify OSINT leakage, what is a good google advanced search (google dork) to identify the email format for a company's email and to located email address that may have been entered in online forums? Include methods to detect if the user obfuscated the email using spaces, parenthesis, brackets, and other common methods. Be succinct.
 
-Return to your searches in [Task 6](task6.md) and review the results for any API related services. Inspect any services running on uncommon web ports: 1883, 3000, 5000, 8000, 8080, 8443, and 8883.
+Your results may be similar to the following for searching your target's website. This may return limited information, if any.
 
-**NOTE:** Do not scan your target. We are trying to be as passive as possible.
+```site:acme.com (*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
 
-Return to your [Task 5](task5.md) DNS and certificate results. Review the data for references to API end points.
+Searching specific forums can be done as well. Forums specializing in industrial and automation control include: [Control.com DCS](https://control.com/forums/forums/distributed-control-systems-dcs.30/){:target="_blank"}, [ADD DCS Community](https://new.abb.com/control-systems/community){:target="_blank"}, [PLCTalk](https://www.plctalk.net/){:target="_blank"}, [Mr.PLC](https://mrplc.com/){:target="_blank"}, etc. Share others with your neighbors.
+
+```site:onlineforum.com (*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
+
+Or, you can just search the whole internet. This may return many results and 
+
+```(*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
+
+### Emails in Breach Disclosures
+
+Users are known to use their corporate email addresses to create accounts on the internet. Most of the time these users are interacting with vendors and integrators websites for which they have legitimate business. Other times, these users are using the data on internet forums or cloud services for industry related knowledge or associations. In the worst case, these users are using their corporate emails on elicit sites to avoid their partners and family from knowing they are involved in these activities. 
+
+In all cases, these third-party sites can be hacked and their data distributed to the internet. These third-party disclosures are commonly referred to as data breaches. Once the data from a breach has been exposed to the internet it is accessible to everyone on the internet. While it seems easy to download and search this information the steps for obtaining, parsing, storing, and maintaining this information can be tedious and expensive.
+
+Services have started to collect this information and provide access to the data for users to determine if their credentials have been exposed. The tool [Have I Been Pwned (HIBP)](https://haveibeenpwned.com/){:target="_blank"} maintains a website where a user can review their individual accounts to determine if an email address was associated to any data breaches. The search tool will return information about the email address provided and all of the data breaches with which it is associated. This allows the user to know if their data and credentials can be obtained and used by threat actors. The service also allows organizations to register to be able to search and monitor their company accounts.
+
+Other companies have followed [HIBP's](https://haveibeenpwned.com/){:target="_blank"} approach to providing users with this information. Many of these services allow for enumeration of this information using a subscription service to access their data using an API key. OSINT tools user these services, typically requiring an API key, to search for the target's users and identified emails in known data breaches. For example, the [SpiderFoot](https://github.com/smicallef/spiderfoot){:target="_blank"} tool has a plugin named [sfp_citidel](https://github.com/smicallef/spiderfoot/blob/master/modules/sfp_citadel.py){:target="_blank"}. The [sfp_citidel](https://github.com/smicallef/spiderfoot/blob/master/modules/sfp_citadel.py){:target="_blank"} plugin is configured to use the data breach search site [Leak - Lookup](https://leak-lookup.com/){:target="_blank"}. This plugin is automatically selected to run during the SpiderFoot - Passive scan, which you may have started during [Task 5](task5.md).
+
+Search your SpiderFoot - Passive scan for hacked emails.
+
+1. Find your SpiderFoot scan in the web browser and select the scan.
+
+2. Locate the tab named `Browse` and click on it.
+
+3. In the `Type` column, locate the item named `Hacked Email Address` and click on the link.
+
+4. The displayed results should show user email addresses in the column labeled `Source Data Element`.
+
+5. Information in the `Data Element` column includes the email address plus the common name for the data breach that leaked the information. 
+
+    **NOTE:** The name of the breach can be reviewed to determine the type of credential data that was exposed in that data breach.
+
+6. Note any results in your personnel tracking document.
+
+7. Review the `Browse` tab and locate other modules with `email` in the name. Click on each and review contents.
+
+8. Note any results in your personnel tracking document.
 
 ## Next Step
 
-When you are done, move onto [Summary](summary.md).
+When you are done, move onto [Task 11](task11.md): Swagger API Analysis.

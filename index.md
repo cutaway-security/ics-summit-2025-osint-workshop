@@ -12,13 +12,14 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 * [Task 1](task1.md): Outline of the Workshop's OSINT Process
 * [Task 2](task2.md): ICS / OT Passive Geolocation Reconnaissance By Sector
 * [Task 3](task3.md): Student Target Identification
-* [Task 4](task4.md): Start SpiderFoot Information Gathering
-* [Task 5](task5.md): Domain Name Service Exploration
-* [Task 6](task6.md): Explore External Remote Access
-* [Task 7](task7.md): Document Exposure Analysis
-* [Task 8](task8.md): Personnel Analysis
-* [Task 9](task9.md): Email Analysis
-* [Task 10](task10.md): Swagger API Analysis
+* [Task 4](task4.md): Initial Website Review
+* [Task 5](task5.md): Start SpiderFoot Information Gathering
+* [Task 6](task6.md): Domain Name Service Exploration
+* [Task 7](task7.md): Explore External Remote Access
+* [Task 8](task8.md): Document Exposure Analysis
+* [Task 9](task9.md): Personnel Analysis
+* [Task 10](task10.md): Email Analysis
+* [Task 11](task11.md): Swagger API Analysis
 
 # Experienced OSINT Analysts
 

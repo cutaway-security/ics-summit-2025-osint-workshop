@@ -59,4 +59,4 @@ In the [SANS ICS410: ICS/SCADA Security Essentials](https://www.sans.org/cyber-s
 
 ## Next Step
 
-When you are done, move onto [Task 4](task4.md): Start SpiderFoot Information Gathering.
+When you are done, move onto [Task 4](task4.md): Initial Website Review.

@@ -9,6 +9,7 @@ layout: default
 
 * [Don C. Weber](https://www.linkedin.com/in/cutaway/){:target="_blank"} - Original Author
 * [Jason Dely](https://www.linkedin.com/in/jasonjdely/){:target="_blank"}
+* [Beer-ISAC](https://x.com/beerisac?lang=en){:target="_blank"}
 
 ## Become a Contributor
 

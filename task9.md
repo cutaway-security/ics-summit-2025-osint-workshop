@@ -5,83 +5,89 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 9: Email Analysis
-
-In the previous steps you may have identified the format the target company uses for email addresses. Understanding the email domain is important. Some companies use their primary domain. Other companies might add an extension, such as `acme-llc.com`. The user's account name will also have a variety of formats. These can be a combination of first name, first initial, last name, initials, and any combination of the concatenated values.
-
-The following steps are designed to identify a user's email address for the target company. Once a few emails have been identified, it is only a matter of scripting to generate a full list of email addresses for known employees.
-
 ## WARNING
 
 We are **NOT** here to break things, people, or organizations. 
 **DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies,
 
-### Google Email Searches
+## Task 8: Personnel Analysis
 
-Google is always a good place to start. Try these tricks on other search engines for different results.
+One of the key OSINT research areas is for a target company's employees. Employees are targeted by threat actor groups because they use the internet for learning and sharing, have knowledge of the target, have the permission and ability to interact with target resources, and have relationships with other companies. Enumerating a company's employees provides a list of targets for phishing campaigns, generation of user account names, generation of email addresses, and (in the worst case) potential blackmail and extortion candidates.
 
-### Exploit-DB GHD Review
+### Enumerate Target Website for Employees
 
-Emails have been around for a long time. There are most likely common Google Advanced Search techniques to identify leaked emails for our target companies.
+Companies share information about their employees by documenting organizational charts, lists of executives and directors, and publishing articles. These items can be found by manually reviewing or using Google to search the target website.
 
-1. Access the [Exploit-DB GHD](https://www.exploit-db.com/google-hacking-database){:target="_blank"} page and type `email` in the `Quick Search` (the search is automatic).
+For workshop purposes, limit review of target employees to first name and last name. We'll use these for considering or generating email addresses in other tasks. We'll also use this when searching online resources, such as [LinkedIn](https://www.linkedin.com/){:target="_blank"}. 
 
-2. Review the results and note any searches you would like to perform on your target domain or on the internet in general. 
+If you are tracking personnel, consider creating a spreadsheet or Comma Separated Value (CSV) document with the following fields, if available. For actual assessments you may want to collect additional information. You can add items, such as certifications and skill sets later
 
-3. Repeat this review using the following terms in the `Quick Search`: `credentials`, `@`, `accounts`
+* First Name
+* Last Name
+* Title
+* Company
+* Domain
+* Email
 
-4. Review the results and note any searches you would like to perform on your target domain or on the internet in general.
+1. Review the target website to identify `executives` and `board of directors`.
 
-5. Run your searches and note any results in your personnel tracking document.
+     * ```site:acme.com "executives"```
+     * ```site:acme.com "board of directors"```
+     * ```site:acme.com "advisory board"```
 
-### AI Tools Email Search
+2. Review the target website for `organization charts`. This may be a list of actual employees (cybersecurity companies are well known for doing this), [United States Securities and Exchange Commission](https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission){:target="_blank"} filings, images, media and social media articles, or leaked documents. 
 
-Formatting the advanced search filters for online search engines can be a challenge. Especially when considering the different types of email address obfuscation techniques user use to hide their emails from search engines. But, humans are predictable. Let's see if your AI tool can help in this situation. Try this search in your AI search tools. Update the query if you think it helps.
+     * ```site:acme.com "organization chart" OR "org chart"```
+     * ```site:acme.com  "annual report" OR "quarterly report"```
+     * ```site:acme.com  "meet our team"```
 
-> When conducting a penetration test to identify OSINT leakage, what is a good google advanced search (google dork) to identify the email format for a company's email and to located email address that may have been entered in online forums? Include methods to detect if the user obfuscated the email using spaces, parenthesis, brackets, and other common methods. Be succinct.
+3. Review the target website for a list of projects or teams that may identify individuals.
 
-Your results may be similar to the following for searching your target's website. This may return limited information, if any.
+     * ```site:acme.com "project management"```
+     * ```site:acme.com "acceptance testing"```
+     * ```site:acme.com "effective date"```
+     * ```site:acme.com "scope of work"```
 
-```site:acme.com (*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
+4. Review the target website for press releases.
 
-Searching specific forums can be done as well. Forums specializing in industrial and automation control include: [Control.com DCS](https://control.com/forums/forums/distributed-control-systems-dcs.30/){:target="_blank"}, [ADD DCS Community](https://new.abb.com/control-systems/community){:target="_blank"}, [PLCTalk](https://www.plctalk.net/){:target="_blank"}, [Mr.PLC](https://mrplc.com/){:target="_blank"}, etc. Share others with your neighbors.
+     * ```site:acme.com "press release"```
+     * ```site:acme.com "news-release"```
+     * ```site:acme.com "in the news"```
 
-```site:onlineforum.com (*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
+5. Review the target's career page for employee attestations what might provide information about them.
 
-Or, you can just search the whole internet. This may return many results and 
+     * ```site:acme.com "careers"```
+     * ```site:acme.com "employment"```
 
-```(*@acme.com OR "[at]acme.com" OR "(at)acme.com" OR "{at}acme.com" OR " at acme.com")```
+6. Review PDF, MS Word, MS Excel documents for project documentation. These documents may name specific individuals such as project managers, engineers, operators, inspectors, safety teams, and other personnel specifically assigned to that project.
 
-### Emails in Breach Disclosures
+### LinkedIn Company Search
 
-Users are known to use their corporate email addresses to create accounts on the internet. Most of the time these users are interacting with vendors and integrators websites for which they have legitimate business. Other times, these users are using the data on internet forums or cloud services for industry related knowledge or associations. In the worst case, these users are using their corporate emails on elicit sites to avoid their partners and family from knowing they are involved in these activities. 
+[LinkedIn](https://www.linkedin.com/){:target="_blank"} provides a wealth of information about a company and its employees. This social media site can be searched without an account but the results are extremely limited. Searching with an account will provide additional results which will ba associated with the user's account, unless privacy settings have been set on the search user's account. 
 
-In all cases, these third-party sites can be hacked and their data distributed to the internet. These third-party disclosures are commonly referred to as data breaches. Once the data from a breach has been exposed to the internet it is accessible to everyone on the internet. While it seems easy to download and search this information the steps for obtaining, parsing, storing, and maintaining this information can be tedious and expensive.
+Conduct a quick search of the [LinkedIn](https://www.linkedin.com/){:target="_blank"} site for the target company's name. Review employees to find the following ICS / OT related skill sets
 
-Services have started to collect this information and provide access to the data for users to determine if their credentials have been exposed. The tool [Have I Been Pwned (HIBP)](https://haveibeenpwned.com/){:target="_blank"} maintains a website where a user can review their individual accounts to determine if an email address was associated to any data breaches. The search tool will return information about the email address provided and all of the data breaches with which it is associated. This allows the user to know if their data and credentials can be obtained and used by threat actors. The service also allows organizations to register to be able to search and monitor their company accounts.
+* Project manager
+* Document manager
+* ICS equipment programmer
+* ICS / OT cybersecurity team
+* OT network administrator
+* OT windows administrator
+* Control systems engineer
+* Compliance, auditing, governance
+* Safety engineer
+* Project engineer
 
-Other companies have followed [HIBP's](https://haveibeenpwned.com/){:target="_blank"} approach to providing users with this information. Many of these services allow for enumeration of this information using a subscription service to access their data using an API key. OSINT tools user these services, typically requiring an API key, to search for the target's users and identified emails in known data breaches. For example, the [SpiderFoot](https://github.com/smicallef/spiderfoot){:target="_blank"} tool has a plugin named [sfp_citidel](https://github.com/smicallef/spiderfoot/blob/master/modules/sfp_citadel.py){:target="_blank"}. The [sfp_citidel](https://github.com/smicallef/spiderfoot/blob/master/modules/sfp_citadel.py){:target="_blank"} plugin is configured to use the data breach search site [Leak - Lookup](https://leak-lookup.com/){:target="_blank"}. This plugin is automatically selected to run during the SpiderFoot - Passive scan, which you may have started during [Task 4](task4.md).
+### Integrator Search
 
-Search your SpiderFoot - Passive scan for hacked emails.
+Most industrial and automation owner / operators partner with integrators that provide specific skill sets for their production and services. These integrators will have personnel that are allowed physical and remote access to the process environments. Identifying these integrator partners can be valuable for multiple reasons.
 
-1. Find your SpiderFoot scan in the web browser and select the scan.
+Use the following AI query to identify potential integrators in a specific area associated with your target. Modify the location `Texas` to match the location of your choice and the target `acme.com` to the target you are researching.
 
-2. Locate the tab named `Browse` and click on it.
+> ICS / OT environments have different system integrators for various industries and locations. Provide a thorough list of system integrators in Texas that service the acme.com.
 
-3. In the `Type` column, locate the item named `Hacked Email Address` and click on the link.
-
-4. The displayed results should show user email addresses in the column labeled `Source Data Element`.
-
-5. Information in the `Data Element` column includes the email address plus the common name for the data breach that leaked the information. 
-
-    **NOTE:** The name of the breach can be reviewed to determine the type of credential data that was exposed in that data breach.
-
-6. Note any results in your personnel tracking document.
-
-7. Review the `Browse` tab and locate other modules with `email` in the name. Click on each and review contents.
-
-8. Note any results in your personnel tracking document.
+**BE CAREFUL**: Your AI results may be _hallucinations_. You should conduct Google Advanced Searches to verify the results.
 
 ## Next Step
 
-When you are done, move onto [Task 10](task10.md): Swagger API Analysis.
+When you are done, move onto [Task 10](task10.md): Email Analysis.

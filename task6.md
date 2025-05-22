@@ -5,44 +5,143 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 6: Explore External Remote Access
+## Task 5: Domain Name Service Exploration
 
-Threat actors will explore our external servers, including our external remote access systems. Typically this includes scanning the systems directly. However, there are several techniques to gather information about these assets without scanning them. To understand these, and to be fair to our selected targets, we are going to perform reconnaissance activities without touching the target's internet accessible servers or services. This also reduces the likelihood that the targeting will be detected by the target's administrative and cybersecurity teams.
+Companies provide public information about their sites and services using [Domain Name Service (DNS)](https://en.wikipedia.org/wiki/Domain_Name_System){:target="_blank"} so that people do not need to remember an Internet Protocol (IP) address. A company's website may be configured with the Fully Qualified Domain Name (FQDN) setting similar to `www.acme.com`. The company's online store FQDN may be `store.acme.com`. However, the server's IP address is required by the application, such as a web browser, to interact with the service. The application requests the IP address for a host or service by making a DNS query to a DNS server. The DNS server's response will contain the current IP address for the targeted domain. 
 
-### Google Information Gathering
+For ICS / OT OSINT analysis, performing DNS reconnaissance is important because the companies external DNS may provide details about the techniques use to provide remote access, monitoring, and possibly control. DNS information may also provide details about the IP ranges for the company's corporate and control environments instead of their cloud-based assets. DNS may also provide references to industrial projects and capabilities that are not publicly promoted but do contain information about the control network and operations.
 
-Google has already indexed most of the online web services of anything connected to the internet. The [Google Advanced Search](https://www.google.co.uk/advanced_search){:target="_blank"} feature allows users to query for specific words in the webpage and to isolate searches to specific sites. A common start to search Google to identify web interfaces that prompt a user to authenticate is (replace `acme.com` with your target site information):
+### Query Remote Access Host Names
 
-```site:acme.com login```
+Every company needs to provide remote access for their workforce. ICS / OT companies may need to provide access to their control environments to vendors, integrators, partner companies, and other business units. There are a large number of remote access techniques and technologies. The host names for these assets often follow a naming scheme that is common to the remote access technique or technology. For example, Citrix services could be hosted on a server with the hostname `citrix` or the abbreviation `ctx`. For the ACME domains this would require a DNS record for `citrix.acme.com` or `ctx.acme.com` which points to the IP address for the server. 
 
-The information returned will have a combination of the target's client / customer portals and remote access services. Review these results for other useful terms to use in search filters, such as `sso`. No matter your results for these searches, it is possible that the remote access solution your target uses does not get identified by the term `login`. Why don't we ask an AI tool for some recommendations about advanced search terms? Consider running or updating the following query for your AI tool. Note that this query includes the list of remote access terms we used in [Task 5](task5.md).
+#### AI Challenge
 
-> Using the following list of potential remote access solutions, what are the best google search filters to use to identify remote access services. Be succinct. "citrix", "rdp", "nvc", "vpn", "remote", "gateway", "access", "support", "anydesk", "secure-access", "remote-access", "bastion", "jump", "portal", "ctx", "netscalar", "receiver", "zscalar", "rdgateway", "rdweb", "tsgateway", "pulse", "secure", "sslvpn", "asa", "bomgar", "fortigate"
+Use the following, or a similar query, to ask your AI tool to list some remote access service host names.
 
-Of course, the results returned by the AI tool may have hallucinations. Update or modify the resulting filters using your own experiences. 
+> ICS / OT environments allow remote access via different types of services and servers. Provide a list of server hostnames that may be used by the top remote access solutions to these environments. Be succinct but provide at least fifteen hostnames for the acme.com domain.
 
-To leverage the experiences of many security researchers, search the [Exploit-DB Google Hacking Database (GHDB)](https://www.exploit-db.com/google-hacking-database){:target="_blank"} to confirm the syntax of the AI tool's response or to find other useful queries. Type the term in the `Quick Search` field to filter on a specific term. Be sure to add the `site:acme.com` filter to these searches to isolate your results to your target.
+#### Array of Remote Access Server Hostnames
 
-**HINT**: You may be able to combine queries using the `OR` operator. This would speed up the searches.
+The following is an array of hostnames that can be used to perform DNS queries to identify these remote access servers. We can use this list to perform DNS searches using Windows or Linux tools.
 
-**HINT**: Why do this AI query more than once? Save your techniques to a personal cheat sheet or [Gist.github.io](https://gist.github.com/){:target="_blank"} so help speed up your future analysis efforts.
+> "citrix", "rdp", "nvc", "vpn", "remote", "gateway", "access", "support", "anydesk", "secure-access", "remote-access", "bastion", "jump", "portal", "ctx", "netscalar", "receiver", "zscalar", "rdgateway", "rdweb", "tsgateway", "pulse", "secure", "sslvpn", "asa", "bomgar", "fortigate"
 
-### Internet Crawler Searches
+There are automated tools that can search for these server names. However, we should have the skills to conduct manual searches for this information, when those tools are not available. Let's use some Windows and Linux command line tools to manually request DNS information for the target company's remote access servers.
 
-There are many online services that crawl the internet and gather information about the online assets. Some of these services allow unregistered users to search their scan results but limit the number of results, access to detailed information, and exportation of results. Registering with the service usually provides a additional functionality but limits the number of queries or access to the service's API interface.
+##### PowerShell Manual DNS Resolution
 
-Currently the most popular online search tools are [Shodan.io](https://www.shodan.io/){:target="_blank"}, [Censys](https://censys.io/){:target="_blank"}, [Hunter Search Engine](https://hunter.how/), and [FOCA](https://en.fofa.info/){:target="_blank"}. Each search tool provides information is a slightly different results format and reporting output. Let's review each service to see the information that is returned by the tool for the remote access servers identified in the previous tasks. You can also search on the target's external subnets if it was identified using ASN data.
+The following commands can be copied into a PowerShell terminal.
 
-**HINT**: These steps can be performed without registering with the search tool. If you have an account, or are willing to make one, register with the service to see the additional functionality the tool provides.
+1. Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
 
-1. Conduct a search using the FQDN or IP address for the remote access server identified in previous tasks.
+    ```ps1con
+    $h="acme.com"
+    ```
 
-2. Review the results to determine if the listening services provide any details about the service and the target company. 
+2. Create an array of remote access services or common host names.
 
-3. Review the results to determine if the search tool identifies known vulnerabilities in the listening services or operating system. Add this information to your notes.
+    ```ps1con
+    $names = @("citrix", "rdp", "nvc", "vpn", "remote", "gateway", "access", "support", "anydesk", "secure-access", "remote-access", "bastion", "jump", "portal", "ctx", "netscalar", "receiver", "zscalar", "rdgateway", "rdweb", "tsgateway", "pulse", "secure", "sslvpn", "asa", "bomgar", "fortigate")
+    ```
 
-4. If your target has a range of external IP addresses, conduct the search again using the IP range. Note any additional remote access services or ICS / OT assets in this data.
+3. Loop through the array, collect the results, and print anything that returned an IPv4 address.
+
+    ```ps1con
+    $results = @()
+    foreach ($n in $names){ $results+=(Resolve-DnsName "$n.$h" -DnsOnly -QuickTimeout -ErrorAction SilentlyContinue -WarningAction SilentlyContinue); }
+    foreach ($r in $results){ if ($r.IP4Address) { Write-Host $r.Name $r.IP4Address } }
+    ```
+
+4. Add the results to your DNS notes.
+
+##### Linux Manual DNS Resolution
+
+There are many ways to do DNS queries in Linux, particularly penetration testing virtual machines like Kali linux. Common tools include [dig](https://en.wikipedia.org/wiki/Dig_(command)){:target="_blank"}, [nslookup](https://en.wikipedia.org/wiki/Nslookup){:target="_blank"}, [host](https://en.wikipedia.org/wiki/Host_(Unix)){:target="_blank"}, [dnsrecon](https://github.com/darkoperator/dnsrecon){:target="_blank"}, and others. 
+
+1. Define a variable for the target domain. Be sure to replace `acme.com` with the primary domain for your target.
+
+    ```zsh
+    h="acme.com"
+    ```
+
+2. Create a list of remote access services or common host names.
+
+    ```zsh
+    names=("citrix" "rdp" "nvc" "vpn" "remote" "gateway" "access" "support" "anydesk" "secure-access" "remote-access" "bastion" "jump" "portal" "ctx" "netscalar" "receiver" "zscalar" "rdgateway" "rdweb" "tsgateway" "pulse" "secure" "sslvpn" "asa" "bomgar" "fortigate")
+    ```
+
+3. Loop through the list, collect the results, and print anything that returned an IPv4 address.
+
+    ```zsh
+    for n in $names; do host "$n.$h" | grep -v -e "not found" -e alias -e handled | cut -d' ' -f1,4; done 
+    ```
+
+4. Add the results to your DNS notes.
+
+### Identify Target Company Subdomains
+
+The target company may not use these host names for remote their remote access servers. It would also be useful to understand if there are any external servers related to ICS / OT services. There are several online tools that can provide information about a domain's subdomains. These tools gather internet DNS information without enumerating DNS using brute force techniques.
+
+#### DNSDumster Search
+
+The [DNSDumpster](https://dnsdumpster.com/){:target="_blank"} tool will provide a lot of valuable information about a target domain. The data returned for each identified host includes FQDN, IP address, [Autonomous System Number (ASN)](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)){:target="_blank"}, ASN Name, and Open Services. The results, however, are limited to the first fifty results for free queries.
+
+1. Access the [DNSDumpster](https://dnsdumpster.com/){:target="_blank"} website in your web browser.
+
+2. Enter the target's domain, such as `acme.com`, into the field labeled `Enter a Domain to Test`.
+
+3. Press the `Start Test!` button.
+
+4. Review the results and add relevant information about ICS / OT related hosts to your notes. Export the results to XLSX, if you prefer.
+
+5. Review the ASN Name field to determine if any of the ASN numbers are directly tied to the target company. Confirmation may require additional analysis. For the associated ASNs, note the IP ranges identified by ASN numbers. 
+
+#### Subdomain Finder Search
+
+The [Subdomain Finder](https://subdomainfinder.c99.nl/){:target="_blank"} tool will provide information about subdomains for the target's domain. Scan results using this tool include information about the FQDN, IP address, and if the [CloudFlare](https://en.wikipedia.org/wiki/Cloudflare){:target="_blank"} service was detected. The results also include a summary of the IP addresses, a list of subdomains without IP addresses, and (interestingly) the results of previous scans.
+
+1. Check the `Private Scan` to prevent the scan from being logged and indexed. 
+
+2. Add the target's domain to the textbox labeled `Domain (eg. example.com)`.
+
+3. Press the `Start Scan` button.
+
+4. Review the results. Extract them by copying to the clipboard or downloading the CSV or JSON file.
+
+**FUTURE TESTING**: The tool provides the ability to `Check Status` for each of the subdomains. Clicking on the `Check Status` button enables the `Status` column. Each FQDN needs to be check individually by clicking the `Check` button.
+
+### Certificate Analysis
+
+Online services require secure communications. These secure communications require Transport Security Layer (TLS) certificates that are associated with the company's domain. Most organizations will generate a specific certificate for each online asset rather than using a wildcard certificate to cover all of the first-level subdomains. A search for issued certificates can provide details about online asset like remote access servers.
+
+The online tool [crt.sh](https://crt.sh/){:target="_blank"}, by [Sectigo](https://www.sectigo.com/){:target="_blank"}, maintains a list of issued certificates over time. It can be used to list all of the certificates for a specific target. 
+
+1. Access the [crt.sh](https://crt.sh/){:target="_blank"} site and enter your target's domain into the search text box.
+
+2. Click the `Search` button.
+
+3. Review the results and add relevant information about ICS / OT related hosts to your notes. Export the results to XLSX, if you prefer.
+
+### Reverse DNS Lookup
+
+Manual reverse DNS lookups can be performed using the previous techniques. An easier tool to use is [DNSRecon](https://github.com/darkoperator/dnsrecon){:target="_blank"}. The [DNSRecon tool is available in the Kali distribution](https://www.kali.org/tools/dnsrecon/){:target="_blank"} or it can be installed following the [installation instructions](https://github.com/darkoperator/dnsrecon/wiki/Installation-Instructions){:target="_blank"}.
+
+If the DNS analysis resulted in a range of IP's for the target company, consider performing a reverse DNS lookup. Run the following steps on your testing system with DNSRecon installed.
+
+1. Start a terminal.
+
+2. Run the command `dnsrecon -r x.x.x.x/24` replacing the value `x.x.x.x/24` with the IP range from the ASN information or other identifying information.
+
+3. Review the `PTR` results and add interesting FQDNs and IP addresses to your notes.
+
+### Questions to Answer
+
+1. How many subdomains does the organization have?
+2. Are any of these subdomains for test servers or remote access?
+3. Were any API endpoints identified?
+4. Did you get a list of known email addresses?
 
 ## Next Step
 
-When you are done, move onto [Task 7](task7.md): Document Exposure Analysis.
+When you are done, move onto [Task 7](task7.md): Identify External Remote Access.
