@@ -23,7 +23,7 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 
 # Experienced OSINT Analysts
 
-Some of this might be basic for you. Stick with the class or move on at your own pace. Help your neighbors. Remember the leadership axiom "Train Your Own Replacement." We, your team, are stronger working together. 
+Some of this might be basic for you. Stick with the class or move on at your own pace. Help your neighbors. Remember the leadership axiom "Train Your Own Replacement." We, your team, and the industries are stronger when we work together. 
 
 # Contributors
 

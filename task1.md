@@ -55,7 +55,7 @@ Workshop attendees and students will be introduced to the following OSINT tactic
 
 ## Continuous Study Opportunities
 
-You, the student, may or may not be able to complete all of these labs. The website for this workshop will remain online after the SANS ICS Summit 2025. This way you can continue to work on these labs to completion and come back to practice in the future. Now that it is online, it will also be available to your team members to do team events. Happy Hunting.
+You, the student, may or may not be able to complete all of these tasks during the workshop. The workshop website will remain online after the SANS ICS Summit 2025. This way you can continue to work on these labs to completion and come back to practice in the future. Now that it is online, it will also be available to your team members to do team events. Happy Hunting.
 
 ## Evaluations and GitHub Issues
 

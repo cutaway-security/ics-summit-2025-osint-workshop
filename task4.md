@@ -25,6 +25,10 @@ Most organizations provide a lot of detail about their organization, services, p
 
 7. Does the site have a support and / or vulnerability information page?
 
+### Geolocation Target Analysis
+
+If you finish early, or as a part of your follow-on research, go back and use any geolocation information about your target to do the searches you performed in [Task 2](task2.md). Determine if you can find the target's headquarter's building, plants, or remote process sites (e.g. substation, pump station, compressor station).
+
 ## Next Step
 
 When you are done, move onto [Task 5](task5.md): Start SpiderFoot Information Gathering.
