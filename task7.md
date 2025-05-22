@@ -39,25 +39,16 @@ Have your AI tool provide you with a query for common terms related to your targ
 
 The terms we received for this query included the following Google search examples. Use your results or modify these results with your knowledge of the target company's specific industry.
 
-```site:acme.com "LNG process"```
-
-```site:acme.com "liquefaction"```
-
-```site:acme.com "regasification"```
-
-```site:acme.com "LNG terminal"```
-
-```site:acme.com "cryogenic"```
-
-```site:acme.com "boil-off gas"```
-
-```site:acme.com "safety procedures LNG"```
-
-```site:acme.com "operating manual LNG"```
-
-```site:acme.com "technical specifications LNG"```
-
-```site:acme.com "flow diagram LNG"```
+* ```site:acme.com "LNG process"```
+* ```site:acme.com "liquefaction"```
+* ```site:acme.com "regasification"```
+* ```site:acme.com "LNG terminal"```
+* ```site:acme.com "cryogenic"```
+* ```site:acme.com "boil-off gas"```
+* ```site:acme.com "safety procedures LNG"```
+* ```site:acme.com "operating manual LNG"```
+* ```site:acme.com "technical specifications LNG"```
+* ```site:acme.com "flow diagram LNG"```
 
 Add any interesting results to your notes.
 
@@ -72,6 +63,22 @@ Let's conduct a search for your target using the [Grayhat Warfare](https://grayh
 **HINT**: These steps can be performed without registering with the search tool. If you have an account, or are willing to make one, register with the service will provide you access to more search results. It will also allow you to limit the search results using `Filename Extensions`.
 
 1. Access the [Grayhat Warfare](https://grayhatwarfare.com/){:target="_blank"} tool and enter the target's name in the search box.
+
+2. Click the `Search` button.
+
+3. Review the results to determine if the data is associated with your target.
+
+4. Conduct additional searches based on product and service names related to your target and review the results to determine if they are associated with your target's assets.
+
+5. Add any interesting results to your notes.
+
+### Data Leak Searches
+
+An organization does not have to be compromised or hacked to have their data exposed in a data breach. A partner, supplier, or service provider could be breached and the data leaked may contain sensitive information about a third-party. There are many online services that provide `DarkWeb` monitoring to determine when data about an organization have been exposed. The teams for these services obtain, parse, index, and create databases of leaked information. Their service offerings often include automated notification of leaded data associated with their clients. To reduce work, threat actor groups may even be customers of these services, although they typically have access to the data via their `DarkWeb` resources.
+
+The [Intelligence X](https://intelx.io/){:target="_blank"} provides an open source tool to search the data that their team has parsed. Searches on their site provide basic details about leaked information that may be related to a specific domain, URL, email, IP address, and other details. Reviewing the actual data does require a subscription and may be required to filter out false positives. 
+
+1. Access the [Intelligence X](https://intelx.io/){:target="_blank"} website and enter the target's name in the search box..
 
 2. Click the `Search` button.
 

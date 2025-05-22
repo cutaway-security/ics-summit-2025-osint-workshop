@@ -17,7 +17,7 @@ An OSINT tool that works well without setting up OSINT service accounts is the [
 
 For this workshop we are going to be using SpiderFoot to conduct an automated review of the target, as selected in [Task 3](task3.md). The SpiderFoot tools is very flexible and can be configured to run comprehensive or less intense information gathering activities. To limit the impact on the identified target we will be using the tool's `Passive scan` technique.
 
-The following examples will be examples of how to run the SpiderFoot tool in Kali. If the tool is not installed on your Kali VM you can follow the [Kali instructions for the installation](https://www.kali.org/tools/spiderfoot/){:target="_blank"}. Of course, you do not need to use Kali. If you have your own system with SpiderFoot installed, or you are [running SpiderFot using a Docker container](https://github.com/smicallef/spiderfoot/blob/master/Dockerfile){:target="_blank"}, the steps should be the same, or similar, on your preferred version.
+The following examples will be examples of how to run the SpiderFoot tool in Kali. If the tool is not installed on your Kali VM you can follow the [Kali instructions for the installation](https://www.kali.org/tools/spiderfoot/){:target="_blank"}. Of course, you do not need to use Kali. If you have your own system with SpiderFoot installed, or you are [running SpiderFot using a Docker container](https://github.com/smicallef/spiderfoot/blob/master/Dockerfile){:target="_blank"}, the steps should be the same, or similar, on your preferred version. Instructions for [installing in Microsoft Windows](#) 
 
 ### Running SpiderFoot in Kali
 
@@ -69,3 +69,18 @@ Using an AI tool, run the following query to help identify areas of focus. These
 ## Next Step
 
 When you are done, move onto [Task 5](task5.md): Domain Name Service Exploration.
+
+## Additional Installation Directions
+
+### Running SpiderFoot on Windows
+
+SpiderFoot can be run on Microsoft Windows. The following steps require that Git, Python >= 3.7, and Pip are installed. Clone the SpiderFoot repository into a Tools or your Download directory. Change into the repository's directory and update the Python requirements. You can then run the SpiderFoot web interface and follow the `New Scan` directions starting at step four of the [Kali setup](#running-spiderfoot-in-kali).
+
+Windows installation steps.
+
+```ps1con
+git clone https://github.com/smicallef/spiderfoot.git
+cd .\spiderfoot\
+ pip3 install -r requirements.txt
+ python3 ./sf.py -l 127.0.0.1:5000
+```
