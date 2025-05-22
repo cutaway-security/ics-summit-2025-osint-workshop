@@ -31,11 +31,9 @@ If you are tracking personnel, consider creating a spreadsheet or Comma Separate
 
 1. Review the target website to identify `executives` and `board of directors`.
 
-    ```site:acme.com "executives"```
-
-    ```site:acme.com "board of directors"```
-
-    ```site:acme.com "advisory board"```
+     * ```site:acme.com "executives"```
+     * ```site:acme.com "board of directors"```
+     * ```site:acme.com "advisory board"```
 
 2. Review the target website for `organization charts`. This may be a list of actual employees (cybersecurity companies are well known for doing this), [United States Securities and Exchange Commission](https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission){:target="_blank"} filings, images, media and social media articles, or leaked documents. 
 
