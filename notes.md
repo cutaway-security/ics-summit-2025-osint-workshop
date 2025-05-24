@@ -14,35 +14,35 @@ The [CherryTree](https://www.giuspen.net/cherrytree/){:target="_blank"} is insta
 The power of CherryTree, in the author's opinion, is in the hierarchial or tree-based note representation using [nodes](https://giuspen.com/cherrytreemanual/#_node_management){:target="_blank"}. The following bullet list is an example of tree-based nodes that could be used during this workshop.
 
 * ACME.COM OSINT
-     * Corporate Online Resources
-         * Websites
-         * Partner List
-         * Board Members
-     * Geolocation Footprint
-         * International Sites
-             * Canada
-         * United States
-             * Texas
-             * California
-     * Automated Tool Scanning
-         * SpiderFoot
-         * Recon-NG
-     * DNS and Subdomain Footprint
-         * Primary Name Servers
-         * Subdomain Analysis
-     * External Remote Access
-         * VPN
-         * RDP
-         * Cloud Services
-     * Document Exposure
-         * Known Data Breaches
-         * Code Repositories
-     * Personnel and Email Review
-         * Key Personnel
-         * Email Addresses
-         * Known Hacked Emails
-     * External API Footprint 
-         * Swagger APIs
+    * Corporate Online Resources
+        * Websites
+        * Partner List
+        * Board Members
+    * Geolocation Footprint
+        * International Sites
+            * Canada
+        * United States
+            * Texas
+            * California
+    * Automated Tool Scanning
+        * SpiderFoot
+        * Recon-NG
+    * DNS and Subdomain Footprint
+        * Primary Name Servers
+        * Subdomain Analysis
+    * External Remote Access
+        * VPN
+        * RDP
+        * Cloud Services
+    * Document Exposure
+        * Known Data Breaches
+        * Code Repositories
+    * Personnel and Email Review
+        * Key Personnel
+        * Email Addresses
+        * Known Hacked Emails
+    * External API Footprint 
+        * Swagger APIs
 
 ## Reports
 
@@ -50,12 +50,12 @@ Good assessment reporting includes multiple sections. The following are a basic 
 
 * Executive Summary - a brief description of the assessment goals, summary of findings, and recommendations that leadership can do to provide their team and organization with assistance for systemic and major issues.
 * Methodology - a description of the scope, basic methodology tasks, tools and techniques used, and the information that was collected. The following are possible sections, similar to this workshop, that may be included in this section of the report.
-     * Corporate Online Resources
-     * Geolocation Footprint
-     * Automated Tool Scanning
-     * DNS and Subdomain Footprint
-     * External Remote Access
-     * Document Exposure
-     * Personnel and Email Review
-     * External API Footprint 
+    * Corporate Online Resources
+    * Geolocation Footprint
+    * Automated Tool Scanning
+    * DNS and Subdomain Footprint
+    * External Remote Access
+    * Document Exposure
+    * Personnel and Email Review
+    * External API Footprint 
 * Findings - a description of the issues identified, recommendations, and (when possible) inclusion of [MITRE ICS ATT&CK Matrix](https://attack.mitre.org/matrices/ics/){:target="_blank"} references that emphasize consequences.
