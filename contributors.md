@@ -12,6 +12,7 @@ layout: default
 * [Jason Dely](https://www.linkedin.com/in/jasonjdely/){:target="_blank"}
 * [Dillon Lee](https://www.linkedin.com/in/dillon-lee/){:target="_blank"}
 * [Jake Smith](https://www.linkedin.com/in/jakesmithics/){:target="_blank"}
+* [Ron Hamann](https://www.linkedin.com/in/rhamanncissp/){:target="_blank"}
 * [Beer-ISAC](https://x.com/beerisac?lang=en){:target="_blank"}
 
 ## Become a Contributor
