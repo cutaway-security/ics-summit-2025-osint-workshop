@@ -11,9 +11,11 @@ This workshop is designed to provide an introduction to gathering publicly acces
 
 Each of the tasks are designed to provide an overview of a specific OSINT gathering and analysis concept. You may or may not complete the task in the time alloted during the workshop. The instructors will move the workshop along every ten minutes. This will ensure the workshop continues to progress and students perform most of the information gathering techniques. This means that some of the analysis steps and techniques may have to be worked on later on your own time.
 
+This is NOT a SANS class. Step-by-step examples with detailed screenshots will not be provided. A task may have some guiding steps to perform but screenshots are purposefully left off because tools change and your version may be different. If you have questions about how to do something, please ask the instructor, your neighbor, or one of your team mates. This workshop is designed to help improve your critical thinking. Use it as an opportunity to problem solve, make mistakes, achieve success, and learn.
+
 Note taking is a vital part of any assessment. During this workshop, taking notes will slow you down. Hence, do not worry about keeping specific notes about your target. Review the [note taking recommendations](./notes.md) if you are conducting an actual assessment.
 
-Also, by all means, please move on to a new task when you are ready. Or, go back and complete a task you are interested in diving into more. OSINT is digging and, at times, following your gut.
+By all means, please move on to a new task when you are ready. Or, go back and complete a task you are interested in diving into more. OSINT is digging and, at times, following your gut.
 
 ## WARNING
 
@@ -45,15 +47,20 @@ Workshop attendees and students will be introduced to the following OSINT tactic
 3. Understand a simple open-source tool that can automate information gathering, analysis, and reporting.
 4. Manually perform information gathering and analysis to understand risk for an organization.
 5. Understand how threat actors are gathering information about your company, your clients, and your people.
+6. How to use AI tools to improve assessment and information gathering techniques.
 
 ## Requirements
+
+Students can perform the majority of this workshop's tasks with a web browser. The following are some more specific details to help students prepare and be successful. Be sure to check out the [tools page](./tools.md) for additional information about the tools described and used in this workshop.
 
 * Windows and / or Linux system
     * Students can use either or both. Students can use a MAC but your commands might be slightly different.
 * Internet access
     * The class is 'online information gathering' after all :wink:
+* Virtual Machines
+    * A testing VM is recommended but not required. Many students will be familiar with [Kali](https://www.kali.org/get-kali/#kali-platforms){:target="_blank"} and this workshop will reference tools that are installed by default on this Linux distribution.
 * SpiderFoot 
-    * Students can install this anyway they prefer. Easiest for most students will just be a Kali VM. But you can do Docker or any other method. Feel free to use any tool of your choice, as well. This is just a recommendation for people who are new to this.
+    * Students can [install SpiderFoot](https://github.com/smicallef/spiderfoot?tab=readme-ov-file#installing--running){:target="_blank"} anyway they prefer. Easiest for most students will just be a Kali VM. But you can do Docker or any other method. Feel free to use any tool of your choice, as well. This is just a recommendation for people who are new to this.
 
 ## Continuous Study Opportunities
 
