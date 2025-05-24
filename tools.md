@@ -29,3 +29,8 @@ The following tools are used during this workshop. You may have better tools for
     * [Leak-Lookup](https://leak-lookup.com/)
 * Command Line Tools
     * [DNSRecon](https://github.com/darkoperator/dnsrecon)
+* Note Taking Tools
+    * [CherryTree](https://www.giuspen.net/cherrytree/){:target="_blank"} (installed by default in Kali) 
+    * [Obsidian](https://obsidian.md/){:target="_blank"}
+    * [Microsoft OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app){:target="_blank"}
+    * [Evernote](https://evernote.com/){:target="_blank"}
