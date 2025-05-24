@@ -5,7 +5,7 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 10: Swagger API Analysis
+## Task 11: Swagger API Analysis
 
 Applications provide the ability for the target's developers, employees, and partners to interact with different services. Some of these services may be associated with industrial control systems and may provide information about the organization, processes, assets, clients / customers, and partners. The target's online assets should be reviewed to identify any asses that are accessible to the internet.
 

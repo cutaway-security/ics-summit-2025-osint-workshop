@@ -5,7 +5,7 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 7: Document Exposure Analysis
+## Task 8: Document Exposure Analysis
 
 The internet is for sharing information. Organizations share information with their potential customers, current clients, business partners, shareholders, and the general public. This information often includes data about current services, marketing, partnerships, personnel experience, and other information. When sharing this information there is a potential that additional data is shared unintentionally due to ignorance or misconfigurations. This data can be shared in many forms. These forms include text, HTML, PDF, MS Word, MS Excel, MS PowerPoint, XML, JSON, compressed files, and backups. These files may be found on the target's main website, other online assets, or in cloud services.
 

@@ -5,7 +5,7 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 4: Start SpiderFoot Information Gathering
+## Task 5: Start SpiderFoot Information Gathering
 
 ### SpiderFoot Overview
 
@@ -81,6 +81,6 @@ Windows installation steps.
 ```ps1con
 git clone https://github.com/smicallef/spiderfoot.git
 cd .\spiderfoot\
- pip3 install -r requirements.txt
- python3 ./sf.py -l 127.0.0.1:5000
+pip3 install -r requirements.txt
+python3 ./sf.py -l 127.0.0.1:5000
 ```

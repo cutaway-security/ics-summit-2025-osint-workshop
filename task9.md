@@ -10,7 +10,7 @@ layout: default
 We are **NOT** here to break things, people, or organizations. 
 **DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies,
 
-## Task 8: Personnel Analysis
+## Task 9: Personnel Analysis
 
 One of the key OSINT research areas is for a target company's employees. Employees are targeted by threat actor groups because they use the internet for learning and sharing, have knowledge of the target, have the permission and ability to interact with target resources, and have relationships with other companies. Enumerating a company's employees provides a list of targets for phishing campaigns, generation of user account names, generation of email addresses, and (in the worst case) potential blackmail and extortion candidates.
 

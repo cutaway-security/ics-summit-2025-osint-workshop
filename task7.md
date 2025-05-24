@@ -5,7 +5,7 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 6: Explore External Remote Access
+## Task 7: Explore External Remote Access
 
 Threat actors will explore our external servers, including our external remote access systems. Typically this includes scanning the systems directly. However, there are several techniques to gather information about these assets without scanning them. To understand these, and to be fair to our selected targets, we are going to perform reconnaissance activities without touching the target's internet accessible servers or services. This also reduces the likelihood that the targeting will be detected by the target's administrative and cybersecurity teams.
 

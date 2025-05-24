@@ -5,7 +5,7 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 5: Domain Name Service Exploration
+## Task 6: Domain Name Service Exploration
 
 Companies provide public information about their sites and services using [Domain Name Service (DNS)](https://en.wikipedia.org/wiki/Domain_Name_System){:target="_blank"} so that people do not need to remember an Internet Protocol (IP) address. A company's website may be configured with the Fully Qualified Domain Name (FQDN) setting similar to `www.acme.com`. The company's online store FQDN may be `store.acme.com`. However, the server's IP address is required by the application, such as a web browser, to interact with the service. The application requests the IP address for a host or service by making a DNS query to a DNS server. The DNS server's response will contain the current IP address for the targeted domain. 
 

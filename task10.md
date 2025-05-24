@@ -5,7 +5,7 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Task 9: Email Analysis
+## Task 10: Email Analysis
 
 In the previous steps you may have identified the format the target company uses for email addresses. Understanding the email domain is important. Some companies use their primary domain. Other companies might add an extension, such as `acme-llc.com`. The user's account name will also have a variety of formats. These can be a combination of first name, first initial, last name, initials, and any combination of the concatenated values.
 
