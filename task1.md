@@ -11,7 +11,7 @@ This workshop is designed to provide an introduction to gathering publicly acces
 
 Each of the tasks are designed to provide an overview of a specific OSINT gathering and analysis concept. You may or may not complete the task in the time alloted during the workshop. The instructors will move the workshop along every ten minutes. This will ensure the workshop continues to progress and students perform most of the information gathering techniques. This means that some of the analysis steps and techniques may have to be worked on later on your own time.
 
-Note taking is a vital part of any assessment. During this workshop, taking notes will slow you down. Hence, do not worry about keeping specific notes about your target. For actual OSINT assessment you will need to keep notes. There are many techniques and this will vary by team and client. Good note taking applications include [CherryTree](https://www.giuspen.net/cherrytree/){:target="_blank"} (installed by default in Kali), [Obsidian](https://obsidian.md/){:target="_blank"}, [Microsoft OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app){:target="_blank"}, and [Evernote](https://evernote.com/){:target="_blank"}. Some OSINT tools may provide note taking tools in addition to being able to generate reports.
+Note taking is a vital part of any assessment. During this workshop, taking notes will slow you down. Hence, do not worry about keeping specific notes about your target. Review the [note taking recommendations](./notes.md) if you are conducting an actual assessment.
 
 Also, by all means, please move on to a new task when you are ready. Or, go back and complete a task you are interested in diving into more. OSINT is digging and, at times, following your gut.
 
