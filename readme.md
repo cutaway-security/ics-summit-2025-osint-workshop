@@ -4,5 +4,7 @@ This project was started to support the [SANS ICS Summit 2025](https://www.sans.
 
 Students seeking more in-depth and detailed OSINT training can consider the [SANS Open Source Intelligence (OSINT)Courses](https://www.sans.org/osint/). Students seeking more in-depth and detailed ICS/OT training can consider the [SANS ICS Courses](https://www.sans.org/industrial-control-systems-security) courses. 
 
-Happy Hunting
+This repository is NOT the workshop. Use the [online workshop website](https://cutaway-security.github.io/ics-summit-2025-osint-workshop/) for a better experience. 
+
+Happy Ethical Hunting.
 
