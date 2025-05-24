@@ -146,4 +146,4 @@ If the DNS analysis resulted in a range of IP's for the target company, consider
 
 ## Next Step
 
-When you are done, move onto [Task 7](task7.md): Identify External Remote Access.
+When you are done, move onto [Task 7](task7.md): Explore External Remote Access.

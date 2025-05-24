@@ -8,7 +8,7 @@ layout: default
 ## WARNING
 
 We are **NOT** here to break things, people, or organizations. 
-**DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies,
+**DO NOT** [dox](https://en.wikipedia.org/wiki/Doxing){:target="_blank"} people or companies.
 
 ## Task 9: Personnel Analysis
 
