@@ -25,6 +25,10 @@ Most organizations provide a lot of detail about their organization, services, p
 
 7. Does the site have a support and / or vulnerability information page?
 
+### Corporate Social Media
+
+Most organizations have dedicated social media accounts. The team's managing these account will be promoting different projects and corporate accomplishments. We do not have time to review these during the workshop. However, during an actual OSINT assessment the social media accounts should be reviewed for information about sites, projects, and individuals. Reviewing posted pictures may also reveal valuable information.
+
 ### Geolocation Target Analysis
 
 If you finish early, or as a part of your follow-on research, go back and use any geolocation information about your target to do the searches you performed in [Task 2](task2.md). Determine if you can find the target's headquarter's building, plants, or remote process sites (e.g. substation, pump station, compressor station).

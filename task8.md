@@ -29,6 +29,10 @@ Your results should contain terms similar to: ini, conf, config, yaml, json, xml
 
 Use the [Exploit-DB GHDB](https://www.exploit-db.com/google-hacking-database){:target="_blank"} `Quick Search` field to run a search for these configuration file terms. 
 
+**HINT:** Here are a few more interesting file extensions:  `eml`, `bak`, `txt`, `rar`, `tar`, `zip`, `gzip`, `bzip`.
+
+**HINT:** Run an AI query to identify file extensions for popular ICS configuration files for a specific vendor. Be sure to validate the results before you use them in your searches.
+
 ### AI Tool Search for Industrial Terms
 
 At times, interesting information is not contained in a specific document type. The data may be directly displayed as a part of the HTML results. Additionally, searches for document types can return a lot of results and it could have been missed. Searching the target website for key process-related terms may identify interesting relationships and aid in locating leaked information.
@@ -49,6 +53,8 @@ The terms we received for this query included the following Google search exampl
 * ```site:acme.com "operating manual LNG"```
 * ```site:acme.com "technical specifications LNG"```
 * ```site:acme.com "flow diagram LNG"```
+
+**HINT:** do not forget general cybersecurity search terms, such as: `backup`, `password`, `password`, `pwd`. IF they work, they work.
 
 Add any interesting results to your notes.
 

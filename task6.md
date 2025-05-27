@@ -13,7 +13,7 @@ For ICS / OT OSINT analysis, performing DNS reconnaissance is important because 
 
 ### Query Remote Access Host Names
 
-Every company needs to provide remote access for their workforce. ICS / OT companies may need to provide access to their control environments to vendors, integrators, partner companies, and other business units. There are a large number of remote access techniques and technologies. The host names for these assets often follow a naming scheme that is common to the remote access technique or technology. For example, Citrix services could be hosted on a server with the hostname `citrix` or the abbreviation `ctx`. For the ACME domains this would require a DNS record for `citrix.acme.com` or `ctx.acme.com` which points to the IP address for the server. 
+Every company that needs to provide remote access for their workforce. ICS / OT companies may need to provide access to their control environments to vendors, integrators, partner companies, and other business units. There are a large number of remote access techniques and technologies. The host names for these assets often follow a naming scheme that is common to the remote access technique or technology. For example, Citrix services could be hosted on a server with the hostname `citrix` or the abbreviation `ctx`. For the ACME domains this would require a DNS record for `citrix.acme.com` or `ctx.acme.com` which points to the IP address for the server. 
 
 #### AI Challenge
 
