@@ -54,7 +54,7 @@ The terms we received for this query included the following Google search exampl
 * ```site:acme.com "technical specifications LNG"```
 * ```site:acme.com "flow diagram LNG"```
 
-**HINT:** do not forget general cybersecurity search terms, such as: `backup`, `password`, `password`, `pwd`. IF they work, they work.
+**HINT:** do not forget general cybersecurity search terms, such as: `backup`, `password`, `password`, `pwd`. If they work, they work.
 
 Add any interesting results to your notes.
 

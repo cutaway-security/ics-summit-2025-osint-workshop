@@ -11,13 +11,13 @@ Companies provide public information about their sites and services using [Domai
 
 For ICS / OT OSINT analysis, performing DNS reconnaissance is important because the companies external DNS may provide details about the techniques use to provide remote access, monitoring, and possibly control. DNS information may also provide details about the IP ranges for the company's corporate and control environments instead of their cloud-based assets. DNS may also provide references to industrial projects and capabilities that are not publicly promoted but do contain information about the control network and operations.
 
-### Query Remote Access Host Names
+### Query Remote Access Hostnames
 
-Every company that needs to provide remote access for their workforce. ICS / OT companies may need to provide access to their control environments to vendors, integrators, partner companies, and other business units. There are a large number of remote access techniques and technologies. The host names for these assets often follow a naming scheme that is common to the remote access technique or technology. For example, Citrix services could be hosted on a server with the hostname `citrix` or the abbreviation `ctx`. For the ACME domains this would require a DNS record for `citrix.acme.com` or `ctx.acme.com` which points to the IP address for the server. 
+Most, but not all, companies need to provide remote access for their workforce. Many ICS / OT companies need to provide remote access to their control environments to vendors, integrators, partner companies, and other business units. To meet these operation requirements, there are a large number of remote access techniques and technologies. The host names for these assets often follow a naming scheme that is common to the remote access technique or technology. For example, Citrix services could be hosted on a server with the hostname `citrix` or the abbreviation `ctx`. For the ACME domains this would require a DNS record for `citrix.acme.com` or `ctx.acme.com` which points to the IP address for the server. 
 
 #### AI Challenge
 
-Use the following, or a similar query, to ask your AI tool to list some remote access service host names. 
+Use the following, or a similar query, to ask your AI tool to list some remote access service hostnames. 
 
 > ICS / OT environments allow remote access via different types of services and servers. Provide a list of server hostnames that may be used by the top remote access solutions to these environments. Be succinct but provide at least fifteen hostnames for the acme.com domain.
 

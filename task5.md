@@ -47,7 +47,7 @@ The following examples will be examples of how to run the SpiderFoot tool in Kal
 
 ### Analyze the Results
 
-This scan will be running long after the workshop ends. So, at this point, go ahead and move onto [Task 5](./task5.md). Periodically review this data as it is being collected. But do not wait for it to complete, it will definitely take a long time.
+This scan will be running long after the workshop ends. So, at this point, go ahead and move onto [Task 6](./task6.md). Periodically review this data as it is being collected. But do not wait for it to complete, it will definitely take a long time.
 
 Before completing this workshop, do pause the scan. You can restart it when you have more time.
 
