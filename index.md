@@ -35,3 +35,6 @@ Be sure to checkout, and thank, the [Contributors](contributors.md) to this work
 
 We use very few tools for this workshop. You can track them on the [Tools](tools.md) page.
 
+# SANS Evaluation
+
+Helps us by filling out a [SANS Evaluation](eval.md) about this workshop or submit an [issue or recommendation at the GitHub repository](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"}.
