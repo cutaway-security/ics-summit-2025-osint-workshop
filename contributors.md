@@ -13,6 +13,7 @@ layout: default
 * [Dillon Lee](https://www.linkedin.com/in/dillon-lee/){:target="_blank"}
 * [Jake Smith](https://www.linkedin.com/in/jakesmithics/){:target="_blank"}
 * [Matthew Shultz](https://www.linkedin.com/in/matthewshultz/){:target="_blank"}
+* [Michele Jewell](https://www.linkedin.com/in/michelejewell/){:target="_blank"}
 * [Ron Hamann](https://www.linkedin.com/in/rhamanncissp/){:target="_blank"}
 * [Beer-ISAC](https://x.com/beerisac?lang=en){:target="_blank"}
 

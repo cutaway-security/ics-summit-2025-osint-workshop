@@ -9,6 +9,8 @@ layout: default
 
 The internet is for sharing information. Organizations share information with their potential customers, current clients, business partners, shareholders, and the general public. This information often includes data about current services, marketing, partnerships, personnel experience, and other information. When sharing this information there is a potential that additional data is shared unintentionally due to ignorance or misconfigurations. This data can be shared in many forms. These forms include text, HTML, PDF, MS Word, MS Excel, MS PowerPoint, XML, JSON, compressed files, and backups. These files may be found on the target's main website, other online assets, or in cloud services.
 
+**NOTE:** This section contains a lot of information. You may not get through it completely during the workshop. Quickly review each section and decide on which to prioritize before we move on. You can always come back to this.
+
 ### Google Information Gathering
 
 The [Google Advanced Search](https://www.google.co.uk/advanced_search){:target="_blank"} feature can be used to locate interesting files. Another type of search is to view a domain for specific file extensions. The following command searches the target for all files with the PDF extension (replace `acme.com` with your target site information):
@@ -93,6 +95,46 @@ The [Intelligence X](https://intelx.io/){:target="_blank"} provides an open sour
 4. Conduct additional searches based on product and service names related to your target and review the results to determine if they are associated with your target's assets.
 
 5. Add any interesting results to your notes.
+
+### Corporate SEC Reports
+
+If a company is publicly traded then they will need to submit an [ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934](https://www.sec.gov/files/form10-k.pdf){:target="_blank"}. These reports can be found by searching the [U.S. Securities and Exchange Commission Search Filings tool](https://www.sec.gov/search-filings){:target="_blank"}. Since companies are expected to publish this information the reports can typically be found on a company's website under Investor Relations or About the Company. The report can show what initiatives were implemented in the past year and give insight into what has been budgeted for the following year. 
+
+Over the years companies have discovered that these company reports should be "dressed" as a marketing tool and provide a lot of the information recommended to gather in this section into a single, visually appealing package. Unfortunately, if a company is not public you will still need to look for these items separately on their website, but they may follow suit even if they are not required to report and provide an overview report, so be on the lookout for those.
+
+Use example reports to help identify key terms to use for search queries, such as the following:
+
+* Food/Beverage: [Sysco 2024 Annual Report](https://investors.sysco.com/~/media/Files/S/Sysco-IR/documents/annual-reports/Sysco_2024-Annual-Report_Web.pdf){:target="_blank"}
+* Equipment and Software Vendor: [ABB Integrated Report 2024](https://search.abb.com/library/Download.aspx?DocumentID=9AKK108470A7206&LanguageCode=en&DocumentPartId=&Action=Launch){:target="_blank"}
+* LNG: [Cheniere Energy SEC Filings](https://lngir.cheniere.com/sec-filings){:target="_blank"}
+* Distribution: [Target SEC Filings](https://corporate.target.com/investors/sec-filings){:target="_blank"}
+* Industrial Machinery and Equipment: [TX Holdings SEC Filings on SEC.gov](https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001133798&owner=exclude&action=getcompany&Find=Search){:target="_blank"}
+
+Reports include the following information:
+
+1. Business Overview
+    * Risk Factors
+    * Unresolved Staff Comments
+    * Cybersecurity
+2. Properties
+3. Legal Proceedings
+4. Mine Safety Disclosures
+5. Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities
+6. Reserved
+7. Management Discussion and Analysis of Financial Condition and Results of Operations
+    * Quantitative and Qualitative Disclosures about Market Risk
+8. Financial Statements and Supplemental Data
+9. Changes in and Disagreements with Accountants on Accounting and Financial Disclosures       
+    * Controls and Procedures
+    * Other Information
+    * Disclosure Regarding Foreign Jurisdictions that Prevent Inspections
+10. Directors, Executive Officers and Corporate Governance
+11. Executive Compensation
+12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters
+13. Certain Relationships and Related Transactions and Director Independence
+14. Principal Accountant Fees and Services
+15. Exhibit and Financial Statement Schedules
+16. Form 10-K Summary
 
 ## Next Step
 
