@@ -13,6 +13,10 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 
 <p style="font-size: 24px;">https://cutaway-security.github.io/ics-summit-2025-osint-workshop/</p>
 
+### SANS Evaluation
+
+Helps us by filling out a [SANS Workshop Evaluation](eval.md) about this workshop or submit an [issue or recommendation at the GitHub repository](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"}.
+
 ## Agenda and Table of Contents
 
 * [Task 1](task1.md): Outline of the Workshop's OSINT Process
@@ -27,18 +31,20 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 * [Task 10](task10.md): Email Analysis
 * [Task 11](task11.md): Swagger API Analysis
 
-# Experienced OSINT Analysts
+## Additional Considerations
+
+### Experienced OSINT Analysts
 
 Some of this might be basic for you. Stick with the class or move on at your own pace. Help your neighbors. Remember the leadership axiom "Train Your Own Replacement." We, your team, and the industries are stronger when we work together. 
 
-# Contributors
+### Contributors
 
 Be sure to checkout, and thank, the [Contributors](contributors.md) to this workshop.
 
-# Tools
+### Tools
 
 We use very few tools for this workshop. You can track them on the [Tools](tools.md) page.
 
-# SANS Evaluation
+### Note Taking
 
-Helps us by filling out a [SANS Workshop Evaluation](eval.md) about this workshop or submit an [issue or recommendation at the GitHub repository](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"}.
+Do not worry about taking notes during this workshop. For assessments, do make sure you are keeping accurate notes. The [Notes](notes.md) pages has some of our recommendations.
