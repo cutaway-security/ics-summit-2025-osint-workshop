@@ -37,4 +37,4 @@ We use very few tools for this workshop. You can track them on the [Tools](tools
 
 # SANS Evaluation
 
-Helps us by filling out a [SANS Evaluation](eval.md) about this workshop or submit an [issue or recommendation at the GitHub repository](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"}.
+Helps us by filling out a [SANS Workshop Evaluation](eval.md) about this workshop or submit an [issue or recommendation at the GitHub repository](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"}.

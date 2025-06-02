@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Recon for the Real World: Practical OSINT in ICS/OT Operations
+# OSINT Workshop
+[Agenda](./index.md)
+
 ## Original Abstract
 
 The following is the original abstract for this workshop. It did morph slightly during development. We are trying to include everything in this abstract and will improve incrementally as the project moves forward. 

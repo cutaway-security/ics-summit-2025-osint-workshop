@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Recon for the Real World: Practical OSINT in ICS/OT Operations
+# OSINT Workshop
+[Agenda](./index.md)
+
 ## SANS Evaluation
 
 Please help improve this workshop by providing your feedback in the [![SANS Workshop Evaluation](./img/workshop_evals.png)](https://survey.sans.org/jfe/form/SV_882HNlbo8h3Hyya?Q_CHL=qr). Be sure to scroll down to the 'OSINT for ICS and Critical Infrastructure - Don Weber' section.

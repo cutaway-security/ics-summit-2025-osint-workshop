@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Recon for the Real World: Practical OSINT in ICS/OT Operations
+# OSINT Workshop
+[Agenda](./index.md)
+
 ## Note Taking
 
 For actual OSINT assessment you will need to keep detailed notes. There are many techniques and this will vary by team and client. Good note taking applications include [CherryTree](https://www.giuspen.net/cherrytree/){:target="_blank"} (installed by default in Kali), [Obsidian](https://obsidian.md/){:target="_blank"}, [Microsoft OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app){:target="_blank"}, and [Evernote](https://evernote.com/){:target="_blank"}. Some OSINT tools may provide note taking tools in addition to being able to generate reports.
