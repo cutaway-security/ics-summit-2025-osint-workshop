@@ -47,4 +47,4 @@ We use very few tools for this workshop. You can track them on the [Tools](tools
 
 ### Note Taking
 
-Do not worry about taking notes during this workshop. For assessments, do make sure you are keeping accurate notes. The [Notes](notes.md) pages has some of our recommendations.
+Do not worry about taking notes during this workshop. For assessments, do make sure you are keeping accurate notes. The [Notes](notes.md) page has some of our recommendations.
