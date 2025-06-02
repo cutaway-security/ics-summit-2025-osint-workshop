@@ -9,6 +9,8 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 
 [![](./img/ics-ot_osint_workshop.png)](https://cutaway-security.github.io/ics-summit-2025-osint-workshop)
 
+<p style="font-size: 24px;">https://cutaway-security.github.io/ics-summit-2025-osint-workshop/</p>
+
 ## Agenda and Table of Contents
 
 * [Task 1](task1.md): Outline of the Workshop's OSINT Process
