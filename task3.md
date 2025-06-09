@@ -15,7 +15,7 @@ If you have a target in mind, you can do this workshop on that specific target. 
 
 ### Randomly Identified Target
 
-Students can also query an AI tool, such as [ChatGPT](https://chatgpt.com/){:target="_blank"} or [Gemini](https://gemini.google.com/app){:target="_blank"}, to request a target by name and primary domain. The following command creates a basic array of the different industrial sectors by name. The command requests that the AI pick a sector from the array and then identifies a company, by name and primary domain, that provides products or services in that industry.
+Students can also query an [AI tool](./ai_tools.md), such as [ChatGPT](https://chatgpt.com/){:target="_blank"} or [Gemini](https://gemini.google.com/app){:target="_blank"}, to request a target by name and primary domain. The following command creates a basic array of the different industrial sectors by name. The command requests that the AI pick a sector from the array and then identifies a company, by name and primary domain, that provides products or services in that industry.
 
 Run the following query and use the randomly identified target as the focus of your workshop's OSINT activities. If the information gathering is producing limited results then run the command again. Most targets will work and produce interestingly unique results.
 
