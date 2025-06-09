@@ -5,9 +5,9 @@ layout: default
 # OSINT Workshop
 [Agenda](./index.md)
 
-## Artificial Intelligence / Language Model Prompt Summary
+## Artificial Intelligence / Language Model Summary
 
-Publicly available Language Models (LMs) are increasingly being used by individuals and organizations to analyze and correlate data in ways that support complex question answering and decision-making. While the underlying technology is based on language modeling, these tools are commonly referred to as Artificial Intelligence (AI) due to their ability to perform tasks that mimic human reasoning. One of the primary goals of LMs is to enable AI-driven applications by leveraging learned patterns and associations from vast amounts of data. - Generated using ChatGPT on 20250608.
+"Publicly available Language Models (LMs) are increasingly being used by individuals and organizations to analyze and correlate data in ways that support complex question answering and decision-making. While the underlying technology is based on language modeling, these tools are commonly referred to as Artificial Intelligence (AI) due to their ability to perform tasks that mimic human reasoning. One of the primary goals of LMs is to enable AI-driven applications by leveraging learned patterns and associations from vast amounts of data." - Generated using ChatGPT on 20250608.
 
 During this workshop there will be references to using AI tools. Students are encouraged to use their favorite AI tools, subscription or subscription-less. Students that do not generally use AI tools can consider using easy to use tools include [ChatGPT](https://chatgpt.com/){:target="_blank"} and [Gemini](https://gemini.google.com/app){:target="_blank"}. These, and other, AI tools may limit the number of queries an unregistered user can make in a specific time period. Registering an account with the AI tool has the benefit of saving queries and getting to know the user's preferences for response formats and style. 
 
@@ -15,7 +15,7 @@ During this workshop there will be references to using AI tools. Students are en
 
 Remember that AI tools are using LMs to correlate information from its data pool. Each AI tools does its best to answer user queries based on this data. The following is a statement from Gemini about why AI tools "hallucinate."
 
-AI tools, particularly large language models (LLMs), "hallucinate" because they are fundamentally sophisticated pattern-matching systems that predict the most probable next word or token based on the vast datasets they were trained on, rather than possessing true understanding, reasoning, or access to real-world facts. When a model encounters ambiguous input, is prompted for information outside its training distribution, or simply finds a statistically plausible but factually incorrect sequence of words, it confidently generates coherent-sounding but false information. This phenomenon stems from their design to prioritize fluency and human-like output over absolute factual accuracy, essentially filling in gaps or generating novel content that aligns with learned statistical relationships but lacks grounding in truth. - Generated using Gemini on 20250608
+"AI tools, particularly large language models (LLMs), "hallucinate" because they are fundamentally sophisticated pattern-matching systems that predict the most probable next word or token based on the vast datasets they were trained on, rather than possessing true understanding, reasoning, or access to real-world facts. When a model encounters ambiguous input, is prompted for information outside its training distribution, or simply finds a statistically plausible but factually incorrect sequence of words, it confidently generates coherent-sounding but false information. This phenomenon stems from their design to prioritize fluency and human-like output over absolute factual accuracy, essentially filling in gaps or generating novel content that aligns with learned statistical relationships but lacks grounding in truth." - Generated using Gemini on 20250608
 
 ## Basic Tips for Using AI Tools
 
@@ -23,11 +23,11 @@ Gemini, using the following prompt, provides the following recommendations for q
 
 > What are five things to remember when making queries of AI tools? Be succinct.
 
-* Be Specific: Clearly state your goal and provide all necessary details.
+* "Be Specific: Clearly state your goal and provide all necessary details.
 * Provide Context: Give background information to ensure relevant understanding.
 * Define Format/Constraints: Specify desired length, style, or output structure.
 * Iterate & Refine: Don't hesitate to adjust your prompt based on initial responses.
-* Verify Output: Always cross-check factual information, as AI can hallucinate. - Generated using Gemini on 20250608
+* Verify Output: Always cross-check factual information, as AI can hallucinate." - Generated using Gemini on 20250608
 
 The following are a few considerations the instructors would like you to remember when using AI tools for OSINT, and other, queries.
 

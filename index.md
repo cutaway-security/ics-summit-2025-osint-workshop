@@ -43,7 +43,7 @@ Be sure to checkout, and thank, the [Contributors](contributors.md) to this work
 
 ### Tools
 
-We use very few tools for this workshop. You can track them on the [Tools](tools.md) page.
+We use very few tools for this workshop as most of the OSINT data collection and analysis can be done using a web browser. You can track all of the tools used and referenced in this workshop on the [Tools](tools.md) page. The [AI Tools](./ai_tools.md) page provides recommendations about using AI tools during the workshop.
 
 ### Note Taking
 

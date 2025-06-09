@@ -61,6 +61,8 @@ Students can perform the majority of this workshop's tasks with a web browser. T
     * A testing VM is recommended but not required. Many students will be familiar with [Kali](https://www.kali.org/get-kali/#kali-platforms){:target="_blank"} and this workshop will reference tools that are installed by default on this Linux distribution.
 * SpiderFoot 
     * Students can [install SpiderFoot](https://github.com/smicallef/spiderfoot?tab=readme-ov-file#installing--running){:target="_blank"} anyway they prefer. Easiest for most students will just be a Kali VM. But you can do Docker or any other method. Feel free to use any tool of your choice, as well. This is just a recommendation for people who are new to this.
+* Artificial Intelligence / Language Model Tools
+    * Students will be provided with some general prompts for AI/LM tools. Check out the [AI Tools](./ai_tools.md) page for an explanation of AI tools and this workshop.
 
 ## Continuous Study Opportunities
 
