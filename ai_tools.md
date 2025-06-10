@@ -33,6 +33,7 @@ The following are a few considerations the instructors would like you to remembe
 
 * AI tools are NOT designed to replace humans. These tools are designed to make humans more efficient and provide correlations that are not easily apparent. 
 * Use AI responses as reference points. Verify data points and use critical thinking to get the most out of their responses.
+* Start new chats for each assessment, provide a descriptive name for the chat, and save the chat for report documentation and future reference.
 * Ask the AI tool to be succinct or brief when extra data or clarification is not necessary.
 * If you ask for links to references it is possible that the AI tool will make up a link. Verify data points.
 * If the response went in an unintended direction ask the AI to fix the response by providing a clarifying statement.
