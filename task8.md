@@ -136,6 +136,25 @@ Reports include the following information:
 15. Exhibit and Financial Statement Schedules
 16. Form 10-K Summary
 
+### Online Content Hosting Services
+
+Individuals and threat actors may use online content hosting services to store and share data. These services may, or may not, provide tools to search their content. Google advance search techniques can also be used to query data on these websites. Use your search skills to search these sites for your target and related search terms.
+
+* [Pastebin.com](https://pastebin.com/){:target="_blank"}
+* [JustPaste.it](https://justpaste.it/){:target="_blank"}
+* [dpaste](https://dpaste.com/){:target="_blank"}
+* [GitHub Gist](https://gist.github.com/){:target="_blank"}
+* [Pastesio.com](https://pastesio.com/){:target="_blank"}
+
+### Online Development and Code Sharing Forums
+
+Developers may share code techniques, ask, and answer questions on code development and sharing forums. The following websites can be integrated in your information gathering steps.
+
+* [Searchcode.com](https://searchcode.com/){:target="_blank"}: A powerful source code search engine that includes results from various open-source platforms and potentially some paste sites.
+* [Stack Overflow](https://stackoverflow.com/questions){:target="_blank"}: a question-and-answer website for computer programmers.
+* [PLCS.net](https://www.plcs.net/){:target="_blank"}: This site offers interactive Q&A and is a source for getting free PLC programming help. It also has a forum for asking and answering PLC-related questions. 
+* [Control.com](https://control.com/){:target="_blank"}: This is a large online community for controls and automation engineers where you can discuss technical and business issues. It has a PLC Archive where users can contribute or download PLC programming examples.
+
 ## Next Step
 
 When you are done, move onto [Task 9](task9.md): Personnel Analysis.
