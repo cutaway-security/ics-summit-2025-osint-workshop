@@ -34,3 +34,6 @@ The following tools are used during this workshop. You may have better tools for
     * [Obsidian](https://obsidian.md/){:target="_blank"}
     * [Microsoft OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app){:target="_blank"}
     * [Evernote](https://evernote.com/){:target="_blank"}
+
+## Return to Agenda
+[Agenda](./index.md)

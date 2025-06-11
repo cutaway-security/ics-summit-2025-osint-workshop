@@ -7,19 +7,19 @@ layout: default
 
 ## Task 12: OSINT Risk Mitigations
 
-Understanding and mitigating Open-Source Intelligence (OSINT) risks is fundamentally a cultural challenge within any organization. It hinges on the collective behavior of individuals, influencing how the entire group and the organization at large conduct themselves in the digital sphere. Many cybersecurity professionals advocate that by empowering individuals with robust OSINT training, organizations cultivate excellent online habits that naturally extend to managing their professional digital footprint.
+### Building Culture Using Security Awareness Training
 
-This crucial training should be a cornerstone of an organization's holistic risk and vulnerability management program, aligning with best practices outlined by authoritative bodies. For instance, CISA (Cybersecurity and Infrastructure Security Agency) regularly publishes advisories and guidance on threat intelligence, which heavily relies on OSINT, emphasizing proactive defense. NIST (National Institute of Standards and Technology), through its Cybersecurity Framework (CSF) and various Special Publications (e.g., NIST SP 800-53, SP 800-39), stresses the importance of continuous monitoring and risk assessment, for which OSINT is a critical input.
+In today's interconnected world, Open-Source Intelligence (OSINT) is a powerful force. While it has legitimate uses, adversaries also leverage publicly available information to target individuals and organizations. This workshop highlights that safeguarding our digital footprint isn't just an IT department's job. Protecting personal and company information is a cultural imperative that depends on how each of us conducts ourselves online, both personally and professionally.
 
-Furthermore, adhering to standards like ISO/IEC 27001 (Information security management systems), particularly its Annex A controls on threat intelligence (A.5.7 in the 2022 revision), mandates that organizations actively gather and analyze threat data, often from open sources, to strengthen their security posture. For industrial control systems (ICS) and operational technology (OT) environments, ISA/IEC 62443 provides a comprehensive series of standards, advocating for robust cybersecurity programs that inherently require understanding external threat landscapes through OSINT.
+Effective cybersecurity awareness training, particularly that which includes Operations Security (OPSEC) principles, is vital. By learning to identify and protect sensitive information before it becomes public, we build the "good online habits" that extend to our communities personal and professional lives. Cybersecurity awareness training isn't just about technical controls. These programs are designed to foster a culture of compliance where cybersecurity becomes a shared responsibility that affects operations and safety.
 
-The training should thoroughly cover the potential consequences of inadvertently exposing sensitive information online, offering clear recommendations for limiting one's exposed data, as championed in SANS Institute's OSINT documentation and courses, which provide practical methodologies for safe and effective intelligence gathering. Crucially, it must also provide concrete procedures for how to promptly report suspected data leaks or instances where individuals believe they are targets of malicious information gathering by threat actors.
+The [SANS ICS Cybersecurity Awareness Training](https://www.sans.org/security-awareness-training/products/specialized-training/ics-engineer/){:target="_blank"} program includes several security awareness modules designed for the different roles and responsibilities within ICS environments. These roles include:
 
-### AI OSINT Program Outline
+* **ICS for end users** - End Users will gain a comprehensive understanding of the interdependence and interconnectedness of systems and how they can be compromised through a range of real-world examples.
+* **ICS for practitioners** - By adopting a cyber engineering perspective on system operations, practitioners will further enhance their defense capabilities against attacks and improve their responses.
+* **ICS for Sr. Leadership** - Leaders will learn about key aspects of employing a, ICS risk management program, including supply chain management, validating patches and files, managing breach notifications, and remote access among others through a series of targeted modules.
 
-Try asking your AI tool to help you generate an outline or project plan to start your OSINT mitigation program. Start by reviewing and improving the following query. Refine the response and then work with your team to improve the results.
-
-> What are some steps an organization's risk management program can do to help uses protect themselves and the organization when considering OSINT?
+Feel free to download the [SANS ICS Cybersecurity Awareness Training Poster](https://www.sans.org/mlp/ics-role-based-training-poster/?msc=ICS-Security-Awareness-Home){:target="_blank"} for your organization. 
 
 ## Next Step
 

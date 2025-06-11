@@ -20,3 +20,6 @@ layout: default
 ## Become a Contributor
 
 Be sure to help improve the tasks in this workshop. Go out to the [ICS Summit 2025 - OSINT Workshop](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"} GitHub and submit issues and recommendations for industrial and automation control resources and information gathering tricks.
+
+## Return to Agenda
+[Agenda](./index.md)

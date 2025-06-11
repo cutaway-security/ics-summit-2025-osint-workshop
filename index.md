@@ -30,6 +30,7 @@ Helps us by filling out a [SANS Workshop Evaluation](eval.md) about this worksho
 * [Task 9](task9.md): Personnel Analysis
 * [Task 10](task10.md): Email Analysis
 * [Task 11](task11.md): Swagger API Analysis
+* [Task 12](task12.md): OSINT Risk Mitigations
 
 ## Additional Considerations
 

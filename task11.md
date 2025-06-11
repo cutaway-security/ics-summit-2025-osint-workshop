@@ -47,4 +47,4 @@ Return to your [Task 5](task5.md) DNS and certificate results. Review the data f
 
 ## Next Step
 
-When you are done, move onto [Summary](summary.md).
+When you are done, move onto [Task 12](task12.md): OSINT Risk Mitigations.

@@ -51,3 +51,6 @@ Update the prompt to try and improve the list and limit it to specifically AI-ba
 Did it work? How would you improve this?
 
 Use this type of clarifying statement for the various AI prompts throughout this workshop.
+
+## Return to Agenda
+[Agenda](./index.md)

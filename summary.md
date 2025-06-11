@@ -18,3 +18,6 @@ Be sure to help improve the tasks in this workshop. Go out to the [ICS Summit 20
 ## OSINT Table Top
 
 Feel free to use this for an OSINT Table Top at your organization. Be sure to let us know your thoughts and improvements.
+
+## Return to Agenda
+[Agenda](./index.md)
