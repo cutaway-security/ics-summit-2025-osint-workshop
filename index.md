@@ -15,7 +15,7 @@ Welcome to the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-traini
 
 ### SANS Evaluation
 
-Helps us by filling out a [SANS Workshop Evaluation](eval.md) about this workshop or submit an [issue or recommendation at the GitHub repository](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"}.
+Help us by filling out a [SANS Workshop Evaluation](eval.md) about this workshop or submit an [issue or recommendation at the GitHub repository](https://github.com/cutaway-security/ics-summit-2025-osint-workshop){:target="_blank"}.
 
 ## Agenda and Table of Contents
 

@@ -70,7 +70,7 @@ You, the student, may or may not be able to complete all of these tasks during t
 
 ## Evaluations and GitHub Issues
 
-Of course SANS will want you to fill out an evaluation for this workshop during the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-training-events/ics-security-summit-2025/){:target="_blank"}. It would be great if you can also [submit any issues](https://github.com/cutaway-security/ics-summit-2025-osint-workshop/issues){:target="_blank"} to the project so we can keep it going and improve it over time.
+Of course SANS will want you to [fill out an evaluation for this workshop](eval.md) during the [SANS ICS Summit 2025](https://www.sans.org/cyber-security-training-events/ics-security-summit-2025/){:target="_blank"}. It would be great if you can also [submit any issues](https://github.com/cutaway-security/ics-summit-2025-osint-workshop/issues){:target="_blank"} to the project so we can keep it going and improve it over time.
 
 ## Next Step
 
