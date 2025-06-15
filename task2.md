@@ -28,6 +28,9 @@ Using an [AI tool](./ai_tools.md) of your choice, such as [ChatGPT](https://chat
 
 > Provide me recommendations for online mapping resources to understand the distribution of large chicken ranches in Texas.
 
+**NOTE:** Why is this important to understand? Be sure to listen to the [Bytes and Bites Podcast](https://www.bitesandbytespodcast.com/){:target="_blank"} [S2E28: Agroterrorism & Cyber Threats: How Farms Are Under Attack
+](https://podcasts.apple.com/lr/podcast/agroterrorism-cyber-threats-how-farms-are-under-attack/id1704061572?i=1000697663743){:target="_blank"} after the workshop.
+
 ## Google Maps
 
 [Google Maps](https://www.google.com/maps){:target="_blank"} offers three different layer views: map view, satellite view, and street view. The satellite view may show features in and around a specific site in an overhead view. Check the site for dumpsters, guard shacks, fence lines, trees, creeks, and other areas that are good for access or monitoring. When in street view, the tool may provide additional (older) versions of the site. Reviewing the street view on different dates may illustrate what has changed with the building over time. It could help you understand when equipment, such as cameras and badge readers, were added or removed.
