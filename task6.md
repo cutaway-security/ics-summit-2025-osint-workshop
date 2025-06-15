@@ -85,7 +85,7 @@ There are many ways to do DNS queries in Linux, particularly penetration testing
 
 The target company may not use these host names for remote their remote access servers. It would also be useful to understand if there are any external servers related to ICS / OT services. There are several online tools that can provide information about a domain's subdomains. These tools gather internet DNS information without enumerating DNS using brute force techniques.
 
-#### DNSDumster Search
+#### DNSDumpster Search
 
 The [DNSDumpster](https://dnsdumpster.com/){:target="_blank"} tool will provide a lot of valuable information about a target domain. The data returned for each identified host includes FQDN, IP address, [Autonomous System Number (ASN)](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)){:target="_blank"}, ASN Name, and Open Services. The results, however, are limited to the first fifty results for free queries.
 

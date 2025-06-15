@@ -29,7 +29,7 @@ The following examples will be examples of how to run the SpiderFoot tool in Kal
 
 3. Open the web browser and navigate to the following URL.
 
-    `https://127.0.0.1:5000`
+    `http://127.0.0.1:5000`
 
 4. Once the tool is running, locate and click the `New Scan` tab in the main menu.
 
