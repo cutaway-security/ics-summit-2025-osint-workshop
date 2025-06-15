@@ -31,6 +31,14 @@ Help us by filling out a [SANS Workshop Evaluation](eval.md) about this workshop
 * [Task 10](task10.md): Email Analysis
 * [Task 11](task11.md): Swagger API Analysis
 * [Task 12](task12.md): OSINT Risk Mitigations
+* [Summary](summary.md): Workshop Summary
+* Additional Resources
+    * [SANS ICS Summit 2025 Evaluation Form](eval.md)
+    * [Notes](notes.md)
+    * [Tools](tools.md)
+    * [AI Tool Considerations](ai_tools.md)
+    * [Contributors](contributors.md)
+    * [Original Abstract](abstract.md)
 
 ## Additional Considerations
 
@@ -44,7 +52,7 @@ Be sure to checkout, and thank, the [Contributors](contributors.md) to this work
 
 ### Tools
 
-We use very few tools for this workshop as most of the OSINT data collection and analysis can be done using a web browser. You can track all of the tools used and referenced in this workshop on the [Tools](tools.md) page. The [AI Tools](./ai_tools.md) page provides recommendations about using AI tools during the workshop.
+We use very few tools for this workshop as most of the OSINT data collection and analysis can be done using a web browser. You can track all of the tools used and referenced in this workshop on the [Tools](tools.md) page. The [AI Tool Consideration](./ai_tools.md) page provides recommendations about using AI tools during the workshop.
 
 ### Note Taking
 
