@@ -34,8 +34,8 @@ Help us by filling out a [SANS Workshop Evaluation](eval.md) about this workshop
 * [Summary](summary.md): Workshop Summary
 * Additional Resources
     * [SANS ICS Summit 2025 Evaluation Form](eval.md)
-    * [Notes](notes.md)
-    * [Tools](tools.md)
+    * [Note Taking Recommendation](notes.md)
+    * [Tool List](tools.md)
     * [AI Tool Considerations](ai_tools.md)
     * [Contributors](contributors.md)
     * [Original Abstract](abstract.md)
