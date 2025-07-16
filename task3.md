@@ -7,7 +7,7 @@ layout: default
 
 ## Task 3: Student Targets Identification
 
-Creating a realistic OSINT target is difficult and, in my opinion, not very realistic. Hence, conducting OSINT on a live target will be a better experiences. However, it is unfair to have the workshop focus on a single target. Therefore, we need another way.
+Creating a hypothetical OSINT target is difficult and, in my opinion, not very realistic. Hence, conducting OSINT on a live target will be a better experiences. However, it is unfair to have the workshop focus on a single target. Therefore, we need another way.
 
 ### Student Identified Target
 
